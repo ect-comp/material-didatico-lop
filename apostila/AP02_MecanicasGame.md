@@ -1,10 +1,14 @@
-﻿> **Mecânicas.**
-As leis da Física mandam e desmandam em nosso mundo, e várias vezes nos deparamos com situações em que são necessárias aplicar essas leis em diferentes tipos de realidade. Aqui, você descobrirá como aplicar física em um jogo feito em JavaScript utilizando a biblioteca P5.js.
+>**Mecânicas.**
+As leis da Física mandam e desmandam em nosso mundo, e várias vezes nos deparamos com situações em que são necessárias aplicar essas
+leis em diferentes tipos de realidade. Aqui, você descobrirá como aplicar física em um jogo feito em JavaScript utilizando a biblioteca
+P5.js.
 Tópicos a serem explanados: Gravidade, Colisão, Empurrar Objetos.
-**“As explicações partem do princípio que o leitor já conhece o mínimo dá biblioteca e sabe executar algumas linhas simples de código, como criar uma elipse, por exemplo.”**
+**“As explicações partem do princípio que o leitor já conhece o mínimo dá biblioteca e sabe executar algumas linhas simples de código,
+como criar uma elipse, por exemplo.”**
 Durante as explicações, quando houver menção a um ”player”, estarei me referindo a elipse branca.
-> **Gravidade**:
+>**Gravidade**:
 Para as exemplificações teremos o seguinte ambiente:
+
 	var g = 0.2;
 	var fy = 0;
 	var px = 100;
@@ -26,8 +30,8 @@ Para as exemplificações teremos o seguinte ambiente:
   	  }
 
 	  **ellipse**(px,py,30,30);
-	  
 	}
+
 Com isso, você deve obter uma tela preta e uma elipse que não será visível pois ela está na posição -100.
 Em um game de plataforma, é importante que exista gravidade, pois o player depende disso para percorrer as plataformas e tudo mais. Por enquanto, ignoraremos toda o material escrito por Isaac Newton e entenderemos a gravidade aqui simplesmente como uma força que fará o objeto cair em direção ao chão.
 Primeiro, precisamos definir alguns conceitos, o que é o chão?
