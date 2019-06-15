@@ -86,7 +86,7 @@ Por enquanto, a existência do **fy** parece desnecessária, mas quando for intr
 
 Agora, o player ainda está passando pela tela, precisamos adicionar um chão.
 
-Como já dito, o chão no jogo será uma posição da qual o player não passará, ou seja, se o player alcançar aquela posição, a força exercida sobre ele deve ser zerada, logo:
+Como já dito, o chão no jogo será uma posição da qual o player não passará, ou seja, se o player alcançar aquela posição, a força exercida sobre ele (**fy**) deve ser zerada, logo:
 	
 	function draw() {
 	  background(0);
