@@ -105,3 +105,98 @@ Como já dito, o chão no jogo será uma posição da qual o player não passar�
 	  py = py + fy;
 	  ellipse(px,py,30,30);
 	}
+
+
+> **Colisão**:
+
+O código no final deste tópico possui uma exemplificação dos conceitos aplicados abaixo:
+
+**OBSI**: A colisão entre 2 objetos pode ser verificada quando a distância entre eles é igual a soma de seus raios.
+
+**OBSII**: Para isso ser verdade, a posição dos objetos deve ser calculada a partir do centro.
+
+**OBSIII**: Em P5, apenas as elipses possuem essa característica, retângulos e imagens tem sua posição calculada a partir do canto
+superior esquerdo. Para usar o centro dos retângulos e nas imagens use dentro do draw os seguintes comandos: **rectMode**(CENTER) e
+**imageMode**(CENTER).
+
+Para as exemplificações teremos o seguinte ambiente:
+
+	var x1 = 0, x2 = 400;
+
+	function setup() {
+	  createCanvas(400, 400);
+	}
+	
+	function draw() {
+	  background(220);
+	  ellipse(x1,100,50,50);
+	  ellipse(x2,100,30,30);
+	  
+	  x1 += 1;
+	  x2 -= 1;
+	}
+
+P5 possui uma função (**dist()**) que calcula a distância entre 2 objetos, ela recebe como parâmetro o X e o Y de dois objetos e retorna a  distância entre eles. Como já dito anteriormente; a colisão entre 2 objetos pode ser verificada quando a distância entre eles é igual a soma de seus raios. Logo, precisamos verificar se a distância entre as 2 elipses é menor que 40, pois, a elipse da direita possui raio = 25 e a elipse da esquerda possui raio = 15.
+
+	function draw() {
+	  background(220);
+	  ellipse(x1,100,50,50);
+	  ellipse(x2,100,30,30);
+	  
+	  if(dist(x1,100,x2,100) < 40){
+	    fill(255,0,0);
+	  }else{
+	    x1 += 1;
+	    x2 -= 1;
+	  }
+	}
+Com isso, as 2 elipses devem estar mudando de cor e parando de se mover ao se tocarem.
+
+**Exemplificação Geral:**
+
+	var x1 = 0, x2 = 400;
+	var x3 = 0, x4 = 400;
+	var x5 = 0, x6 = 400;
+	
+	function setup() {
+	  createCanvas(400, 400);
+	}
+	
+	function draw() {
+	  background(220);
+	  
+	  fill(255);
+	  text('Colisão entre elipses: ', 0, 15);  
+	  if(dist(x1,50,x2,50) < 40){
+		fill(255,0,0);
+	  }else{
+	    x1 += 1;
+		x2 -= 1;
+	  }
+	  ellipse(x1,50,50,50);
+	  ellipse(x2,50,30,30);
+	  
+	  rectMode(CORNER);
+	  fill(255);
+	  text('Colisão entre retângulos NÃO CENTRADOS: ', 0, 115);  
+	  if(dist(x3,150,x4,150) < 40){
+		fill(255,0,0);
+	  }else{
+	    x3 += 1;
+		x4 -= 1;
+	  }
+	  rect(x3,130,50,50);
+	  rect(x4,130,30,30);
+	  
+	  rectMode(CENTER);
+	  fill(255);
+	  text('Colisão entre retângulos CENTRADOS: ', 0, 215);  
+	  if(dist(x5,250,x6,250) < 40){
+		fill(255,0,0);
+	  }else{
+	    x5 += 1;
+	    x6 -= 1;
+	  }
+	  rect(x5,250,50,50);
+	  rect(x6,250,30,30);  
+	}
