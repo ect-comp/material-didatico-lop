@@ -7,7 +7,7 @@ como criar uma elipse, por exemplo.”**
 
 >**Mecânicas.**
 
-As leis da Física mandam e desmandam em nosso mundo, e várias vezes nos deparamos com situações em que são necessárias aplicar essas
+As leis da Física mandam e desmandam em nosso mundo e várias vezes nos deparamos com situações em que são necessárias aplicar essas
 leis em diferentes tipos de realidade. Aqui, você descobrirá como aplicar física em um jogo feito em JavaScript utilizando a biblioteca
 P5.js.
 
