@@ -1,15 +1,15 @@
+**“As explicações partem do princípio que o leitor já conhece o mínimo dá biblioteca e sabe executar algumas linhas simples de código,
+como criar uma elipse, por exemplo.”**
+
+**Tópicos a serem explanados: Gravidade, Colisão, Empurrar Objetos.**
+
+**Durante as explicações, quando houver menção a um ”player”, estarei me referindo a elipse branca.**
+
 >**Mecânicas.**
 
 As leis da Física mandam e desmandam em nosso mundo, e várias vezes nos deparamos com situações em que são necessárias aplicar essas
 leis em diferentes tipos de realidade. Aqui, você descobrirá como aplicar física em um jogo feito em JavaScript utilizando a biblioteca
 P5.js.
-
-Tópicos a serem explanados: Gravidade, Colisão, Empurrar Objetos.
-
-**“As explicações partem do princípio que o leitor já conhece o mínimo dá biblioteca e sabe executar algumas linhas simples de código,
-como criar uma elipse, por exemplo.”**
-
-Durante as explicações, quando houver menção a um ”player”, estarei me referindo a elipse branca.
 
 >**Gravidade**:
 
@@ -42,8 +42,6 @@ Com isso, você deve obter uma tela preta e uma elipse que não será visível p
 
 Em um game de plataforma, é importante que exista gravidade, pois o player depende disso para percorrer as plataformas e tudo mais. Por enquanto, ignoraremos toda o material escrito por Isaac Newton e entenderemos a gravidade aqui simplesmente como uma força que fará o objeto cair em direção ao chão.
 
-Primeiro, precisamos definir alguns conceitos, o que é o chão?
-No nosso mundo, a força normal atua cancelando as forças atuantes e isso faz com que a gente não atravesse o chão. Mas, como fazemos isso em um jogo? Simples, faremos o chão ser uma posição da qual o player não deve passar.
 
 A gravidade é uma força que atua sobre o player e o faz **acelerar** em direção ao chão. Perceba a presença da palavra “**acelerar**”, isso indica que é um processo de  acréscimo, de soma. 
 **Se g = 9.81 m/s, a cada um segundo se é somado 9.81 metros.**
@@ -85,6 +83,17 @@ Com isso, o player agora deve estar caindo e atravessando a tela. Porém, não �
 Por enquanto, a existência do **fy** parece desnecessária, mas quando for introduzido mecânicas de pulo ou dash, ela será melhor compreendida.
 
 Agora, o player ainda está passando pela tela, precisamos adicionar um chão.
+
+No nosso mundo, a força normal atua cancelando a força peso e isso faz com que a gente não atravesse o chão.
+Então, no game será necessário algo que faça o player parar, que ele não atravesse determinada posição, aqui não temos as propriedades físicas do nosso mundo, porém, podemos trabalhar o conceito de uma outra forma. Como dito, precisamos fazer com que o player pare e não passe de determinada posição, e se tentarmos algo como: 
+
+	if(posição_y_do_player > determinada_posição){
+	  pare_de_cair.
+	}
+
+Ou seja, quando o player chegasse a aquela posição ele iria parar de cair, mas, como eu digo pra ele parar de cair?
+
+Simples, pegamos a ideia da normal, a normal atua para cancelar a força exercida em **Y**, logo, basta dizer que a força em **Y** agora é 0.
 
 Como já dito, o chão no jogo será uma posição da qual o player não passará, ou seja, se o player alcançar aquela posição, a força exercida sobre ele (**fy**) deve ser zerada, logo: (**Para demonstração foi escolhido a posição 360 como chão**)
 	
@@ -199,4 +208,100 @@ Com isso, as 2 elipses devem estar mudando de cor e parando de se mover ao se to
 	  }
 	  rect(x5,250,50,50);
 	  rect(x6,250,30,30);  
+	}
+
+> **Empurrar Objetos**:
+
+**OBSI**: Esse parte **NÃO** foi exemplificada em um game de plataforma, porém, **ELE FUNCIONA COM GAMES DE PLATAFORMA TAMBÉM!**
+
+Para as exemplificações teremos o seguinte ambiente:
+
+	var px = 100;
+	var py = 100;
+	var pr = 30;
+	var speed = 5;
+	var fx = 0;
+	var fy = 0;
+
+	var enemy_X = 0;
+	var enemy_Y = 0;
+	var enemy_R = 30;
+
+	function setup() {
+	  createCanvas(600, 400);
+	  enemy_X = random(50,550);
+	  enemy_Y = random(50,350);
+	}
+
+	function draw() {
+	  background(0);
+
+	  fx = 0;
+	  fy = 0;
+	  if(keyIsDown(LEFT_ARROW)){
+	    fx = -speed;
+	  }
+	  if(keyIsDown(RIGHT_ARROW)){
+	    fx = +speed;
+	  }
+	  if(keyIsDown(UP_ARROW)){
+	    fy = -speed;
+	  }
+	  if(keyIsDown(DOWN_ARROW)){
+	    fy = +speed;
+	  }
+	  px = px + fx;
+	  py = py + fy;
+	  fill(255);
+	  ellipse(px,py,pr,pr);  
+
+	  fill(255,0,0);
+	  ellipse(enemy_X,enemy_Y,enemy_R,enemy_R);
+	}
+
+**OBSII**: Perceba que, na movimentação no eixo **X** do player, foi utilizado o conceito de força explicado no tópico referente a gravidade. Agora, existe uma força (**fx**) que faz o player se mover no eixo **X**.
+
+Imagine a seguinte situação, há um objeto a sua frente e você deseja move-lo, tira-lo do lugar, o que você faz?
+
+Você o empurra, obviamente.
+
+Mas, o que significa esse "empurrar"? Significa que você aplica uma força sobre o objeto. E em que direção é essa força? Na direção em que eu estiver fazendo força.
+
+Então, para mover um objeto, bastaria eu aplicar sobre ele uma força que tivesse a direção deseja...
+
+Tendo isso em mente, se eu quiser fazer meu player empurrar algo, basta de dizer que, se ele estiver colidindo com objeto, faça força sobre ele, ou seja, que some em seus eixos as forças atuantes sobre o player.
+
+Então:
+
+	function draw() {
+	  background(0);
+
+	  fx = 0;
+	  fy = 0;
+	  if(keyIsDown(LEFT_ARROW)){
+	    fx = -speed;
+	  }
+	  if(keyIsDown(RIGHT_ARROW)){
+	    fx = +speed;
+	  }
+	  if(keyIsDown(UP_ARROW)){
+	    fy = -speed;
+	  }
+	  if(keyIsDown(DOWN_ARROW)){
+	    fy = +speed;
+	  }
+	  px = px + fx;
+	  py = py + fy;
+	  fill(255);
+	  ellipse(px,py,pr,pr);  
+
+
+	  var soma_raios = (pr+enemy_R)/2; 
+	  var distance = dist(px,py,enemy_X,enemy_Y)
+	  if(distance < soma_raios){
+	    enemy_X = enemy_X + fx;
+	    enemy_Y = enemy_Y + fy;
+	  }
+	  fill(255,0,0);
+	  ellipse(enemy_X,enemy_Y,enemy_R,enemy_R);
 	}
