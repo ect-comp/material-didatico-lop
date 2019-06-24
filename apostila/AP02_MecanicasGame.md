@@ -63,7 +63,7 @@ Então:
 	  ellipse(px,py,30,30);
 	}
 
-Com isso, o player agora deve estar caindo e atravessando a tela. Porém, não é interessante alterar a posição do player diretamente: **py = py + g;**, pois haverão mais forças a serem aplicadas em y, a gravidade não será a única. O correto é calcular as forças resultantes e só depois aplicar na posição. Para calcular as forças em y, utilizaremos a variável **fy**. Logo:
+Com isso, o player agora deve estar caindo e atravessando a tela **(DE FORMA BEM LENTA, AGUARDE UM POUCO)**. Porém, não é interessante alterar a posição do player diretamente: **py = py + g;**, pois haverão mais forças a serem aplicadas em y, a gravidade não será a única. O correto é calcular as forças resultantes e só depois aplicar na posição. Para calcular as forças em y, utilizaremos a variável **fy**. Logo:
 	
 	function draw() {
 	  backgroun(0);
