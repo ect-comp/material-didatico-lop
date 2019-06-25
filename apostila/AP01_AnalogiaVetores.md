@@ -13,16 +13,26 @@ Imagine a seguinte situação, você está trabalhando para uma companhia de tre
 Perceba que a numeração dos vagões começa em 0. Devemos agora, fazer nosso trabalho, precisamos da quantidade total de pessoas desse trem. Então, dizemos para o maquinista, vá do vagão 0 até o vagão 4, de um em 1, e me informe a quantidade de pessoas que tem em cada vagão. Então o maquinista começa;
 
 (Os vagões serão representados por colchetes [ ])
+
 O maquinista começa em 0 e vai até o 4º vagão, de um em um, logo:
+
 **for(i = 0; i < 5; i++)**
+
 Quando **i** = **0**: No [ i ] do trem: 15 pessoas; 
+
 Quando **i** = **1**: No [ i ] do trem: 9 pessoas;
+
 Quando **i** = **2**: No [ i ] do trem: 7 pessoas;
+
 Quando **i** = **3**: No [ i ] do trem: 2 pessoas;
+
 Quando **i** = **4**: No [ i ] do trem: 8 pessoas.
 
+
 Agora, trabalharemos a mesma situação utilizando programação, com o mesmo exemplo, temos um trem e queremos a somatória de pessoas que estão nele.
+
 De acordo com o que combinamos mais a cima, a partir de agora vetores são trens, e a nossa variável do for será o maquinista, tendo isso em mente, vamos ao código.
+
 Primeiro em JavaScript e depois em C++.
 
 (Código JavaScript) 
