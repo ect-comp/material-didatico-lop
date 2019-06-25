@@ -10,7 +10,9 @@ No for usamos uma variável para ir “contando” os valores, no exemplo acima,
  
 Imagine a seguinte situação, você está trabalhando para uma companhia de trens e sua função é contar quantas pessoas vem nesse trem, para isso, você precisa fazer a somatória de pessoas em cada vagão. Você conta com o maquinista do trem para que ele pegue o número de pessoas que está dentro de cada vagão. Digamos que acabou de chegar um trem com 5 vagões: 
 
-Perceba que a numeração dos vagões começa em 0. Devemos agora, fazer nosso trabalho, precisamos da quantidade total de pessoas desse trem. Então, dizemos para o maquinista, vá do vagão 0 até o vagão 4, de um em 1, e me informe a quantidade de pessoas que tem em cada vagão. Então o maquinista começa;
+**trem[5] = {15, 9, 7, 2, 8};
+
+Lembre que a numeração dos vagões começa em 0. Devemos agora, fazer nosso trabalho, precisamos da quantidade total de pessoas nesse trem. Então, dizemos para o maquinista (o nosso **i**), vá do vagão 0 até o vagão 4, de um em 1, e me informe a quantidade de pessoas que tem em cada vagão. Então o maquinista começa;
 
 (Os vagões serão representados por colchetes [ ])
 
@@ -55,7 +57,7 @@ Primeiro em JavaScript e depois em C++.
 		somatoria = somatoria + Trem[i] ;
 	}
 
-	cout << somatoria;	// A resposta esperado é 41;
+	cout << somatoria;	// A resposta esperada é 41;
 
 (Código C++)
 
@@ -77,4 +79,4 @@ Primeiro em JavaScript e depois em C++.
 		somatoria = somatoria + Trem[i] ;
 	}
 
-	cout << somatoria;	// A resposta esperado é 41;
+	cout << somatoria;	// A resposta esperada é 41;
