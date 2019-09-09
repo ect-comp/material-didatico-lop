@@ -40,10 +40,10 @@ Para as exemplificações teremos o seguinte ambiente:
 
 Com isso, você deve obter uma tela preta e uma elipse que não será visível pois ela está na posição -100.
 
-Em um game de plataforma, é importante que exista gravidade, pois o player depende disso para percorrer as plataformas e tudo mais. Por enquanto, ignoraremos toda o material escrito por Isaac Newton e entenderemos a gravidade aqui simplesmente como uma força que fará o objeto cair em direção ao chão.
+Em um game de plataforma, é importante que exista gravidade, pois o player depende disso para percorrer as plataformas e tudo mais. Por enquanto, ignoraremos todo o material escrito por Isaac Newton e entenderemos a gravidade aqui simplesmente como uma força que fará o objeto mover (cair) em direção ao chão.
 
 
-A gravidade é uma força que atua sobre o player e o faz **acelerar** em direção ao chão. Perceba a presença da palavra “**acelerar**”, isso indica que é um processo de  acréscimo, de soma. 
+A gravidade é uma força que atua sobre o player e o faz **acelerar** em direção ao chão. Perceba a presença da palavra “**acelerar**”, isso indica que é um processo de acréscimo, de soma. 
 **Se g = 9.81 m/s, a cada um segundo se é somado 9.81 metros.**
 
 Então: 
