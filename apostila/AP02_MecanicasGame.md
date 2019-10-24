@@ -15,11 +15,11 @@ P5.js.
 
 Para as exemplificações teremos o seguinte ambiente:
 
-	var g = 0.2;
-	var fy = 0;
-	var px = 100;
-	var py = -100;
-	var speed = 4;
+	var g = 0.2; // Gravidade
+	var fy = 0; // Força resultante em Y
+	var px = 100; // Posição do player no eixo X
+	var py = -100; // Posição do player no eixo Y
+	var speed = 4; // Velocidade de deslocamento do Player no eixo Y
 	
 	function setup() {
 	  createCanvas(600, 400);
@@ -43,8 +43,7 @@ Com isso, você deve obter uma tela preta e uma elipse que não será visível p
 Em um game de plataforma, é importante que exista gravidade, pois o player depende disso para percorrer as plataformas e tudo mais. Por enquanto, ignoraremos todo o material escrito por Isaac Newton e entenderemos a gravidade aqui simplesmente como uma força que fará o objeto mover (cair) em direção ao chão.
 
 
-A gravidade é uma força que atua sobre o player e o faz **acelerar** em direção ao chão. Perceba a presença da palavra “**acelerar**”, isso indica que é um processo de acréscimo, de soma. 
-**Se g = 9.81 m/s, a cada um segundo se é somado 9.81 metros.**
+Como já dito, a gravidade é uma força que atua sobre o player e o faz mover em direção ao chão (Para baixo, no caso). Então, seguindo essa ideia, basta fazer com que a posição em **y** do player seja alterada, de forma que seja sempre somado um valor a sua posição atual.
 
 Então: 
 
@@ -58,7 +57,7 @@ Então:
   	    px = px + speed;
   	  }
 	  
-	  py = py + g;
+	  py = py + g; // Posição em y do player sendo incrementada pela gravidade.
 	  
 	  ellipse(px,py,30,30);
 	}
@@ -75,8 +74,8 @@ Com isso, o player agora deve estar caindo e atravessando a tela **(DE FORMA BEM
   	    px = px + speed;
   	  }
 	  
-	  fy = fy + g;
-	  py = py + fy;
+	  fy = fy + g; // Calculando as forças resultantes em y
+	  py = py + fy; // E alterando a posição com base na força resultante
 	  ellipse(px,py,30,30); 
 	}
 
@@ -108,9 +107,9 @@ Como já dito, o chão no jogo será uma posição da qual o player não passar�
   	  }
 	  
 	  fy = fy + g;
-	  if(py > 360){
-  	    fy = 0;
-	    py = 360;
+	  if(py > 360){ // if(posição_y_do_player > determinada_posição)
+  	    fy = 0; // Anula a força atuando sobre o player (Funciona como a força Normal)
+	    py = 360; // Corrige a posição do Player
   	  }
 	  py = py + fy;
 	  ellipse(px,py,30,30);
