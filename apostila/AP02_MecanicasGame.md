@@ -95,7 +95,7 @@ Ou seja, quando o player chegasse a aquela posição ele iria parar de cair, mas
 
 Simples, pegamos a ideia da normal, a normal atua para cancelar a força exercida em **Y**, logo, basta dizer que a força em **Y** agora é 0.
 
-Como já dito, o chão no jogo será uma posição da qual o player não passará, ou seja, se o player alcançar aquela posição, a força exercida sobre ele (**fy**) deve ser zerada, logo: (**Para demonstração foi escolhido a posição 360 como chão**)
+Como já dito, o chão no jogo será uma posição da qual o player não passará, ou seja, se o player alcançar aquela posição, a força exercida sobre ele (**fy**) deve ser zerada, logo: (**Para demonstração foi escolhido a posição 360 como chão**). É necessário corrigir a posição do plaer, caso tenha sido detectado que ele pasosu do chão, ele zere a força em y exercida e corrija sua posição para o valor determinado para ser o chão (360 nesse caso).
 	
 	function draw() {
 	  background(0);
@@ -110,7 +110,71 @@ Como já dito, o chão no jogo será uma posição da qual o player não passar�
 	  fy = fy + g;
 	  if(py > 360){
   	    fy = 0;
+	    py = 360;
   	  }
+	  py = py + fy;
+	  ellipse(px,py,30,30);
+	}
+
+> **Pulo**:
+
+Para exemplificações, teremos o seguinte ambiente:
+
+	var g = 0.2;
+	var fy = 0;
+	var px = 100;
+	var py = -100;
+	var speed = 4;
+	
+	function setup() {
+	  createCanvas(600, 400);
+	}
+
+	function draw() {
+	  background(0);
+
+  	  if(keyIsDown(LEFT_ARROW)){
+  	    px = px - speed;
+  	  }
+  	  if(keyIsDown(RIGHT_ARROW)){
+  	    px = px + speed;
+  	  }
+	  
+	  fy = fy + g;
+	  if(py >= 360){
+  	    fy = 0;
+            py = 360;
+  	  }
+	  py = py + fy;
+	  ellipse(px,py,30,30);
+	}
+
+Agora que temos um chão definido, vamos debater um pouco sobre a ideia de pular, na nossa realidade, para pularmos, aplicamos uma força no chão e ele nos devolve essa força nos fazendo "subir". Não iremos trabalhar com a ideia da "Normal" ou algo assim, será mais simplista. Do que foi dito anteriormente, podemos tomar como base que, parar pularmos, precisamos estar no chão, só assim é possivel que ocorra algo que nos faça pular.
+
+Então, se em algum momento eu quiser fazer o player pular, verificamos se o player esta no chão (Ou seja, se o player se encontra na posição pré definida como chão que foi abordada anteriormente), e se sim, aplicamos uma força negativa em **fy**. (Lembre que aqui, o eixo **y** é **invertido**).
+
+Logo, temos que:
+
+	function draw() {
+	  background(0);
+
+  	  if(keyIsDown(LEFT_ARROW)){
+  	    px = px - speed;
+  	  }
+  	  if(keyIsDown(RIGHT_ARROW)){
+  	    px = px + speed;
+  	  }
+	  
+	  fy = fy + g;
+	  if(py >= 360){
+  	    fy = 0;
+            py = 360;
+  	  }
+	  
+	  if(keyIsDown(UP_ARROW) && py >= 360){
+	    fy = fy - 7;
+	  }
+	  
 	  py = py + fy;
 	  ellipse(px,py,30,30);
 	}
@@ -159,6 +223,7 @@ P5 possui uma função (**dist()**) que calcula a distância entre 2 objetos, el
 	    x2 -= 1;
 	  }
 	}
+	
 Com isso, as 2 elipses devem estar mudando de cor e parando de se mover ao se tocarem.
 
 **Exemplificação Geral:**
