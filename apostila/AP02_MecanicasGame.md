@@ -1,7 +1,7 @@
 **“As explicações partem do princípio que o leitor já conhece o mínimo dá biblioteca e sabe executar algumas linhas simples de código,
 como criar uma elipse ou movimentar uma forma usando o teclado, por exemplo.”**
 
-**Tópicos a serem explanados: Gravidade, Colisão, Empurrar Objetos.**
+**Tópicos a serem explanados: Gravidade, Pulo, Colisão, Empurrar Objetos.**
 
 **Durante as explicações, quando houver menção a um ”player”, estarei me referindo a elipse branca.**
 
