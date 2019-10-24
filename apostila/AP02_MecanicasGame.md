@@ -148,9 +148,11 @@ Para exemplificações, teremos o seguinte ambiente:
 	  ellipse(px,py,30,30);
 	}
 
-Agora que temos um chão definido, vamos debater um pouco sobre a ideia de pular, na nossa realidade, para pularmos, aplicamos uma força no chão e ele nos devolve essa força nos fazendo "subir". Não iremos trabalhar com a ideia da "Normal" ou algo assim, será mais simplista. Do que foi dito anteriormente, podemos tomar como base que, parar pularmos, precisamos estar no chão, só assim é possivel que ocorra algo que nos faça pular.
+Agora que temos um chão definido, vamos debater um pouco sobre a ideia de pular, na nossa realidade, para pularmos, aplicamos uma força no chão e ele nos devolve essa força nos fazendo "subir". Não iremos trabalhar com a ideia da "Normal" ou algo assim, será mais simplista.
 
-Então, se em algum momento eu quiser fazer o player pular, verificamos se o player esta no chão (Ou seja, se o player se encontra na posição pré definida como chão que foi abordada anteriormente), e se sim, aplicamos uma força negativa em **fy**. (Lembre que aqui, o eixo **y** é **invertido**).
+Do que foi dito anteriormente, podemos tomar como base que, parar pularmos, precisamos estar no chão.
+
+Então, se em algum momento eu quiser fazer o player pular, verificamos se ele esta no chão (Ou seja, se o player se encontra na posição pré definida como chão que foi abordada anteriormente), e se sim, aplicamos uma força negativa em **fy**. (Lembre que aqui, o eixo **y** é **invertido**).
 
 Logo, temos que:
 
