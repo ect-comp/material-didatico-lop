@@ -57,7 +57,7 @@ Primeiro em JavaScript e depois em C++.
 		somatoria = somatoria + Trem[i] ;
 	}
 
-	cout << somatoria;	// A resposta esperada é 41;
+	alert(somatoria);	// A resposta esperada é 41;
 
 (Código C++)
 
