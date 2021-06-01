@@ -30,34 +30,43 @@ O pneu do carro furou, qual o algoritmo que você usaria para substituir o pneu 
 * A lógica é um meio de garantir que nosso pensamento proceda corretamente a fim de chegar a conhecimentos verdadeiros (válidos)
 Colocar ordem no pensamento
 
-### Introdução à Lógica 
-
-#### Exemplo 1
+### Exemplo 1
 * Todo mamífero é um animal
 * Todo cavalo é um mamífero
 * Logo, todo cavalo é um animal
 
-#### Exemplo 2
+### Exemplo 2
 * Daniela é mais jovem que Adriano
 * Carlos é mais velho que Daniela
-
 Logo:
   * Adriano é mais velho que Carlos (Falso)
   * Carlos é mais velho que Adriano (Falso)
   * **Daniela é a mais nova das 3 pessoas (Verdadeiro)**
 
-
-#### Exemplo 3
+### Exemplo 3
 * “Se o RU servir cuscuz hoje então eu jantarei no RU”
 * “O RU serviu cuscuz”
 * Logo, eu jantei no RU
 
-#### Exemplo 4 
-1. Um **pastor** precisa transportar **um carneiro e dois fardos de capim** para o outro lado do rio
-2. Ele possui um barco pequeno, que transporta **uma coisa de cada vez** (um carneiro ou um fardo de capim)
-3. Se ele deixar o carneiro junto do capim em alguma das margens do rio, o carneiro come o capim
+### Exemplo 4 
+* Um **pastor** precisa transportar **um carneiro e dois fardos de capim** para o outro lado do rio
+* Ele possui um barco pequeno, que transporta **uma coisa de cada vez** (um carneiro ou um fardo de capim)
+* Se ele deixar o carneiro junto do capim em alguma das margens do rio, o carneiro come o capim
 
+[Slide da respostas do problema do pastor](https://docs.google.com/presentation/d/1YtX44dXYObqUFsdzCgRvY3sOjjj8UarzH5BIv_754AA/edit?usp=sharing) 
 
+Sugestão de resolução:
+1. Levar o carneiro para a margem leste
+1. Voltar para a margem oeste
+1. Levar um fardo para margem leste
+1. Voltar com o carneiro para margem oeste
+1. Levar o segundo fardo para margem leste
+1. Voltar para margem oeste
+1. Levar o carneiro para margem leste
 
+### Por que estudar lógica e algoritmos? 
+* Aprender **lógica** é aprender a como **“pensar correto”** para resolver um problema
+* Uma sequência de passos é uma forma de explicar/organizar a solução para um problema
 
+**Definição 2:** **Algoritmo** é uma forma de expressar o raciocínio **lógico.**
 
