@@ -18,7 +18,7 @@
 1. Pegar a mochila
 1. Sair para a parada de ônibus
 
-## Exercícios 
+## Exercício 1
 O pneu do carro furou, qual o algoritmo que você usaria para substituir o pneu furado?
 
 ## Introdução à Lógica 
@@ -69,4 +69,35 @@ Sugestão de resolução:
 * Uma sequência de passos é uma forma de explicar/organizar a solução para um problema
 
 **Definição 2:** **Algoritmo** é uma forma de expressar o raciocínio **lógico.**
+
+
+## Exercício 2
+
+Veja abaixo o teste de QI japonês, conhecido como o problema da travessia do rio. O problema consiste em 8 pessoas que têm que atravessar um rio utilizando uma jangada (Fonte: http://www.japones.net.br/teste-de-qi-japones/).
+
+As oito pessoas são:
+* pai;
+* mãe;
+* dois filhos;
+* duas filhas;
+* um policial;
+* um prisioneiro.
+
+Para efetuar a travessia é necessário seguir algumas regras:
+* A jangada só pode carregar duas pessoas por vez;
+* Somente o pai, a mãe e o policial sabem manobrar a jangada;
+* Os filhos não podem ficar com a mãe na ausência do pai em nenhuma das margens do rio;
+* Os filhos não podem ser transportados pela mãe;
+* As filhas não podem ficar com o pai na ausência da mãe em nenhuma das margens do rio;
+* As filhas não podem ser transportadas pelo pai;
+* O prisioneiro não pode ficar com os membros da família na ausência do policial;
+
+
+## Cursos Online 
+* [Introdução a Programação da Khan Academy](https://pt.khanacademy.org/computing/computer-programming/programming) 
+* [Introdução a Computação na Cursera](https://www.coursera.org/learn/ciencia-computacao-python-conceitos) 
+
+
+
+
 
