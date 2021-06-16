@@ -124,6 +124,10 @@ Para efetuar a travessia é necessário seguir algumas regras:
 
 ## Fluxograma 
 
+> ![tabela-fluxograma](https://user-images.githubusercontent.com/19957124/122242073-68e3a680-ce99-11eb-95cc-bd6cf2c2f40a.jpg)
+>
+> Fonte da imagem: https://www.treinaweb.com.br/blog/conceitos-usados-no-aprendizado-de-programacao 
+
 
 Pseudocódigo;
 Linguagens de programação
