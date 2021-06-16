@@ -202,8 +202,9 @@ b. Calcular quantos azulejos são necessários no comprimento
 c. Multiplicar o resultado dos passos a) e b)
 
 ## Referências
-
-
+* [Livros](https://github.com/ect-info/lop/blob/master/bibliografia.md)
+* [Cursos online](https://github.com/ect-info/lop/blob/master/cursos_online.md)
+* [Outras referências](https://github.com/ect-info/lop/blob/master/referencias.md)
 
 ## Cursos Online 
 * [Introdução a Programação da Khan Academy](https://pt.khanacademy.org/computing/computer-programming/programming) 
