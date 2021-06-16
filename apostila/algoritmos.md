@@ -92,6 +92,44 @@ Para efetuar a travessia é necessário seguir algumas regras:
 * As filhas não podem ser transportadas pelo pai;
 * O prisioneiro não pode ficar com os membros da família na ausência do policial;
 
+# Formas de representação de algoritmos 
+
+## Descrição Narrativa
+
+* Uso da linguagem natural: Português, inglês, espanhol, etc.;
+* Considera os passos mais importantes e pode servir de esboço para outras representações. 
+* Temos a inconveniência da má interpretação, originando *ambiguidades* e *imprecisões*:
+* Para evitar más interpretações, a escrita do algoritmo deve ser mais detalhada: 
+
+### Exemplo 1 
+* Chegar pontualmente na aula
+  * Acordar às 5h30 
+  * Tomar banho 
+  * **Tomar o café da manhã** 
+  * Pegar a mochila 
+  * Sair para a parada de ônibus
+
+### Exemplo 1 - Detalhado 
+* Chegar pontualmente na aula
+  * Acordar às 5h30 
+  * Tomar banho 
+  * **Tomar o café da manhã** 
+    * Pegar leite na geladeira e servir em um copo 
+    * Pegar uma fatia de queijo 
+    * Cortar um pão ao meio e colocar o queijo 
+    * Comer o sanduíche e tomar o leite 
+  * Pegar a mochila 
+  * Sair para a parada de ônibus
+
+
+## Fluxograma 
+
+
+Pseudocódigo;
+Linguagens de programação
+
+
+
 
 ## Cursos Online 
 * [Introdução a Programação da Khan Academy](https://pt.khanacademy.org/computing/computer-programming/programming) 
