@@ -141,18 +141,68 @@ Exemplo de fluxograma para calcular a média a apartir das notas de três provas
 * Estrutura semelhante às linguagens de programação, porem é uma forma rápida de expressar o algoritmo sem perder tempo com detalhes. 
 * Mais didático e fácil compreensão 
 
+### Exemplo - Média de dois números 
 
-
-Linguagens de programação
-
-```python 
+```java
 inicio
-	 real n1,n2,r
-	 ler n1,n2
-	 r <- (n1 + n2) / 2.0
-	 escrever "A média é: ", r
+  real n1,n2,r
+  ler n1,n2
+  r <- (n1 + n2) / 2.0
+  escrever "A média é: ", r
 fim 
 ```
+
+
+## Linguagens de programação
+
+Linguagem padronizada para descrever instruções para um computador. Possui um conjunto de regras sintáticas e semânticas usadas para descrever algoritmos e não possui ambiguidades. 
+
+### Exemplo com a linguagem Javascript
+
+```javascript
+x = prompt("Entre com x: ") // leitura de x
+y = prompt("Entre com y: ") // leitura de y
+media = (parseFloat(x) + parseFloat(y))/2; // cálculo da média
+alert("A média é "+media) // escrita do resultado
+``` 
+
+
+Códigos com exemplos na página de LoP no GitHub:
+* https://github.com/ect-info/lop/tree/master/codigos 
+* https://github.com/ect-info/lop 
+* https://github.com/ect-info/codigos-jogo 
+
+## Programação 
+
+Aprender a programar é aprender a resolver problemas usando algoritmos e uma linguagem de programação. Aprender a dividir um problema grande em problemas pequenos resolvendo um problema por vez. Este curso de Lógica de Programação foca em resolver problemas matemáticos. 
+
+## Exercício 1
+
+Você está construindo uma piscina que mede 4,0 metros de largura, 9,0 metros de comprimento e 2,0 metros de profundidade. Para não gastar demais, você precisa calcular exatamente quantos azulejos serão necessários para toda a piscina. Considere que os azulejos medem 60 x 60 cm cada. 
+* Qual a sequência de passos (o algoritmo) para resolver esse problema matemático?
+
+Solução 1: 
+* Calcular quantos azulejos são necessários para cobrir toda a área da piscina. 
+
+A solução anterior é muito abstrata. Não estão claras as ações necessárias para resolver o problema. É necessário um detalhamento maior. 
+Solução 2: 
+1. Calcular quantos azulejos são necessários no piso
+2. Calcular quantos azulejos são necessários em cada parede
+3. Somar o resultado dos passos 1 e 2
+
+Como calcular o passo 1?
+* Área total = 4 * 9 = 36m²
+* Área do azulejo = 0,6 * 0,6 = 0,36m²
+* Quantidade de azulejos = 36 / 0,36 = 100
+Essa solução usa azulejos quebrados. 
+
+É possível aprimorar a resolução deste problema da seguinte forma. Para calcular quantos azulejos inteiros serão necessário basta proceder com o seguinte algoritmo: 
+a. Calcular quantos azulejos são necessários na largura
+b. Calcular quantos azulejos são necessários no comprimento
+c. Multiplicar o resultado dos passos a) e b)
+
+## Referências
+
 
 
 ## Cursos Online 
