@@ -1,6 +1,6 @@
 # Algoritmos 
 
-**Definição:** "É uma sequência lógica de passos que visa atingir um objetivo específico."
+**Definição 1:** "É uma sequência lógica de passos que visa atingir um objetivo específico."
 
 ## Exemplos de Algoritmos
 
