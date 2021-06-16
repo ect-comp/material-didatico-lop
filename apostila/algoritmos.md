@@ -128,11 +128,31 @@ Para efetuar a travessia é necessário seguir algumas regras:
 >
 > Fonte da imagem: https://www.treinaweb.com.br/blog/conceitos-usados-no-aprendizado-de-programacao 
 
+Exemplo de fluxograma para calcular a média a apartir das notas de três provas:
 
-Pseudocódigo;
+>  ![Fluxograma_algoritmo01](https://user-images.githubusercontent.com/19957124/122244222-17d4b200-ce9b-11eb-86c6-a8e6708b8d76.png)
+>
+> Fonte da imagem: [https://saulo.arisa.com.br/](https://saulo.arisa.com.br/wiki/index.php/Introdu%C3%A7%C3%A3o_%C3%A0_L%C3%B3gica_de_Programa%C3%A7%C3%A3o) 
+
+
+
+## Pseudocódigo
+
+* Estrutura semelhante às linguagens de programação, porem é uma forma rápida de expressar o algoritmo sem perder tempo com detalhes. 
+* Mais didático e fácil compreensão 
+
+
+
 Linguagens de programação
 
-
+```python 
+inicio
+	 real n1,n2,r
+	 ler n1,n2
+	 r <- (n1 + n2) / 2.0
+	 escrever "A média é: ", r
+fim 
+```
 
 
 ## Cursos Online 
