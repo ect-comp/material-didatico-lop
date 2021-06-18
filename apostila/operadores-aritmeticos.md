@@ -46,3 +46,24 @@ Método 2:
 
 Operadores de mesma precedência são resolvidos da esquerda para direita na expressão. O único resultado da expressão `48 / 2 * (9 + 3)` é 288. 
 
+## Exercícios: 
+
+### Convertendo de horas para dias
+
+Escreva um programa que recebe um número inteiro de horas e imprime o número equivalente em dias. Ex.: 60 horas = 2,5 dias.
+
+Algoritmo: 
+1. Entre com o número de horas e guarde em uma variável *horas* 
+2. Divida o valor contido em *horas* por 24 
+3. Apresente o resultado do passo 2. 
+
+Código: 
+```javascript
+horas = prompt("Digite as horas: ")
+dias = horas / 24 
+alert(dias)
+``` 
+
+
+
+
