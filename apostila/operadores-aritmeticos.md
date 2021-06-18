@@ -64,6 +64,14 @@ dias = horas / 24
 alert(dias)
 ``` 
 
+### Cálculo do IMC
 
+Escreva um programa que recebe a altura em metros e a massa em quilos de uma pessoa e calcula seu Índice de Massa Corporal (IMC). A fórmula do IMC é massa dividido por altura ao quadrado. Ver:  
 
-
+Código: 
+```javascript
+massa = parseFloat( prompt("Entre com a massa"))
+altura = parseFloat( prompt("Entre com a altura"))
+imc = massa / ( altura ** 2)
+alert("IMC: "+imc)  
+```
