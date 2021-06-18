@@ -25,3 +25,27 @@ Exemplo de código para mostrar um texto na tela:
 ```javascript
 alert("Olá Mundo!");
 ```
+
+## Entrada de dados
+
+Lê o valor digitado e armazena em uma variável. A valor de entrada deve ser compatível com o tipo de dado da variável. Quando o camando de leitura de dados é executado, o programa fica esperando indefinidamente até que a entrada de dados seja concluída ou fornecida. 
+
+Entrada de dados em algoritmo (explicado)
+* Leia um valor 
+
+### Entrada em JavaScript
+
+Para ler um texto: 
+```javascript
+valor = prompt("Mensagem");
+```
+
+Para ler um número real:
+```javascript
+valor = parseFloat(prompt("Mensagem")); 
+```
+
+Para ler um número inteiro: 
+```javascript
+valor = parseInt(prompt("Mensagem"));
+```
