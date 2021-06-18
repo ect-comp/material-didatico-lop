@@ -2,6 +2,8 @@
 
 **Definição:** Expressão aritmética é aquela cujos operadores são aritméticos e os operandos são constantes ou variáveis numéricas.
 
+## Operadores 
+
 Símbolo em JavaScript | Função | Exemplo 
 ----------------------|--------|----------
  `+` | Adição | `2 + 3`, `X + Y`
@@ -13,12 +15,13 @@ Símbolo em JavaScript | Função | Exemplo
  `%` | Resto da divisão | 7 % 3
  Sem símbolo | Quociente da divisão inteira | `Math.floor( x / y )`
 
-Precedência de operadores:
+## Precedência de operadores
+
 * Parênteses mais internos
 * `*, /, %`
 * `+, -`
 
-Exemplos:
+Exemplos de expressões:
 * `A - B * C`
 * `(A * (B + C)) % D`
 
