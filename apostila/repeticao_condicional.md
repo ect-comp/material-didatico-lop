@@ -99,7 +99,15 @@ Para resolver problemas de contagem, devemos identificar:
 
 Exemplo de solução: 
 ```javascript
-
+ var n = parseInt(prompt("Entre com um número: "))
+ var contador = 0 
+ while ( n != 0 ) {
+     if ( n % 3 == 0 || n % 7 == 0 ) {
+         contador = contador + 1 
+     }
+     n = parseInt(prompt("Entre com um novo número: "))
+ }
+ alert(contador)
 ```
 
 
