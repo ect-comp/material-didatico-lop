@@ -23,3 +23,17 @@ do {
 } while ( condição );
 ```
 " Faça as instruções, Enquanto a condição for verdadeira."
+
+## Exercícios 
+
+Execute passo a passo os códigos a seguir: 
+
+Repetição: 
+```javascript
+var x = 10
+var y = 40 
+while ( x > 3 ) {
+   x = y / 3 
+   y = x + 2 
+}
+```
