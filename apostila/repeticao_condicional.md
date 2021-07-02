@@ -1,4 +1,4 @@
-# Estrutura Condicional
+# Repetição Condicional
 
 
 As estruturas de repetição são usadas quando precisamos executar diversas vezes uma mesma sequência de instruções.
