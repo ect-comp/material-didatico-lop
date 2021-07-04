@@ -67,6 +67,16 @@ Em uma repetição simples, resolvemos um problema específico repetidas vezes
   * Quando o programa receber 0 (comando de parada)
     * Logo, enquanto não for 0, o programa deve repetir
 
+Exemplo de solução: 
+```javascript
+var x = parseFloat(prompt("Entre com um número: "))
+while ( x != 0 ){
+  var quadrado = Math.pow(x,2) 
+  alert(quadrado) 
+  x = parseFloat(prompt("Entre com um número: "))
+}
+``` 
+
 ### Validação de dados
 
 O objetivo da validação de dados é garantir que as informações dadas pelo usuário são aceitáveis.
