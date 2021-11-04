@@ -88,9 +88,10 @@ Para atribuir um valor a uma variável use o operador `=`
 * Lê-se: "<variável> recebe <valor>" 
 
 Exemplos:
-* preco = 8.50
-* altura = 1.67
-* genero = 'M'
-
+```javascript
+preco = 8.50
+altura = 1.67
+genero = 'M'
+```
 
 
