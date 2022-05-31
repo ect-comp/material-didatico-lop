@@ -82,7 +82,13 @@ Outros usos também válidos do for (embora diferentes)
 2 - Implemente um programa que receba a idade de 80 pessoas (rode só com 8) e determina a média da idade das pessoas.
 
 ## Algoritmos Tradicionais 
+Em programação, embora existam vários tipos de problemas, alguns deles são mais frequentes
+* Entender bem e aprender a solução (algoritmo) de cada um deles
+* Identificar as pequenas diferenças de cada problema específico
 
+* Contagem 
+* Somatório/Produtório 
+* Encontrar o melhor valor 
 
 ### Contador do for 
 
@@ -127,6 +133,88 @@ for ( cont = 300; cont <= 400; cont++){
 }
 alert(resultado)
 ```
+
+
+## Exemplo 3 
+
+“Implemente um programa que escreva os  termos da sequência a seguir, iniciando do 10º até o 20º (inclusive).”
+* S = (1/1, 1/3, 1/5, 1/7, 1/9, ...  )
+
+```javascript
+S=""; //usando string (mas não é obrigatório)
+for ( i = 10; i<= 20; i++){
+        termo_i=" 1 /"+(2*i-1)+", "
+        S =S+ termo_i;
+}
+alert(S);
+``` 
+
+## Somatório 
+
+O que entendemos por acumular valores (soma parcial)?
+
+“Implemente um programa que recebe 2 números inteiros A e B. O programa deve acumular/somar o valor de B ao valor de A e imprimir o resultado.”
+
+Acumulador: Adicionar/somar um novo valor a algum valor já existente.
+
+O acúmulo dos valores é a soma parcial dos valores, armazenado em uma mesma variável que já existia, mudando o valor que tinha.
+
+```javascript
+A=A+B;
+alert(A);
+```
+
+## Exemplo 4 
+
+“Implemente um programa que calcula o somatório de todos os números entre 300 e 400 (inclusive).”
+
+Para resolver problemas de somatório, devemos:
+*  Inicializar uma variável somatório em zero (termo neutro)  
+* Calcular cada termo do somatório
+  * Obs.: Os números de 300 a 400 formam uma sequência
+* Acumular cada termo do somatório
+  * Inicializado com o termo neutro
+* Escrever o resultado
+  * Depois de acumular todos os valores
+
+```javascript
+Soma=0;
+for ( i = 300; i<= 400; i++){
+  Soma =Soma+i;
+}
+alert(Soma);
+```
+
+## Exemplo 5
+Implemente um programa que calcula a soma dos 10 primeiros termos da sequência abaixo:
+* S = (1/1, 1/3, 1/5, 1/7, 1/9, ...  )
+
+Série é a soma dos termos de uma sequência. Podemos reescrever o enunciado do exemplo assim:
+* S=1 + 1/3 + 1/5 + 1/7 + 1/9 + ...
+
+```javascript
+Soma=0;
+for ( i = 1; i<= 10; i++){
+  termo_i=1/(2*i-1)
+  Soma =Soma+termo_i;
+}
+alert(Soma);
+```
+
+## Produtório 
+
+“Implemente um programa que recebe um número natural N e calcula N!”
+
+Fatorial
+* O fatorial de N, ou N!, nada mais é que o produtório de N; 
+
+Fatorial = 1 * 2 * 3 * ... * N 
+
+
+
+
+
+
 
 
 
