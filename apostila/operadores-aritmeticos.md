@@ -75,3 +75,16 @@ altura = parseFloat( prompt("Entre com a altura"))
 imc = massa / ( altura ** 2)
 alert("IMC: "+imc)  
 ```
+
+### Média Ponderada 
+
+Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno. Considera que a média é ponderada e que o peso de cada nota é: 2, 3 e 5, respectivamente.
+
+Código: 
+```javascript
+var nota1 = parseFloat(prompt("Entre com a nota 1: "))
+var nota2 = parseFloat(prompt("Entre com a nota 2: "))
+var nota3 = parseFloat(prompt("Entre com a nota 3: "))
+var media = (nota1*2 + nota2*3 + nota3*5) / (2+3+5)
+alert(media)
+```
