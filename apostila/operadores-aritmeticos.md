@@ -88,3 +88,7 @@ var nota3 = parseFloat(prompt("Entre com a nota 3: "))
 var media = (nota1*2 + nota2*3 + nota3*5) / (2+3+5)
 alert(media)
 ```
+
+## Referências 
+
+* (_Developer Mozilla_: Operadores aritméticos)[https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_aritm%C3%A9ticos]
