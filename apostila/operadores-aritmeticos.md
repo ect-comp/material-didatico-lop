@@ -91,4 +91,4 @@ alert(media)
 
 ## Referências 
 
-* (_Developer Mozilla_: Operadores aritméticos)[https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_aritm%C3%A9ticos]
+* [_Developer Mozilla_: Operadores aritméticos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_aritm%C3%A9ticos)
