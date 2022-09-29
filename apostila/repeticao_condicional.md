@@ -50,7 +50,7 @@ while ( x > 3 ) {
 ```
 Ver vídeo com este exemplo:  https://youtu.be/5nabBOi0rgg
 
-## Repetições 
+## Exemplos 
 
 **(Exemplo 1)** Implemente um programa que receba a idade de várias pessoas e informa se cada um delas é menor de idade ou idosa. Para encerrar, o usuário deve digitar a idade -1. 
 
@@ -189,10 +189,52 @@ Exemplo de solução:
  alert(contador)
 ```
 
+## Exercícios 
 
 
+Implemente um programa que recebe números inteiros positivos como entrada e para quando o número recebido for 22. O seu programa deve escrever todos os números recebidos, com exceção do 22, separados por espaços. O espaço no final da saída é opcional.
+
+```javascript
+var x = parseFloat(prompt("Entre com um número: "));
+while(x != 22) {
+    alert(x+" "); 
+    x = parseFloat(prompt("Entre com um número: "));
+}
+```
+
+Faça um programa que lê a idade de 6 pessoas e diz quantas delas são maiores de 18 anos! Nesse programa você vai precisar criar um segundo contador! O programa precisa de um contador para contar quantas vezes o programa vai repetir. Independente disso, ele vai precisar de um segundo contador para contar quantas vezes foi encontrada uma pessoa com mais de 18 neste grupo. São dois contadores diferentes e portanto duas várias distintas.  
 
 
+```javascript
+cont = 0
+contIdade = 0
+while ( cont < 6 ){ 
+    idade = parseInt(prompt("Entre com a idade: ")) 
+    if (idade > 18 ){
+        contIdade++ 
+    }
+    cont++ 
+}
+alert(contIdade)
+```
+
+Faça um programa que leia vários inteiros positivos e mostre, no final, a soma dosnúmeros pares e a soma dos números ímpares. O programa para quando entrar umnúmero maior que 1000.
+
+```javascript
+somaPar = 0 
+somaImpar = 0 
+n = parseInt(prompt("Entre com um número: "))
+while (n <= 1000){
+    if (n%2===0){
+        somaPar = somaPar + n 
+    }
+    else {
+        somaImpar = somaImpar + n 
+    }
+    n = parseInt(prompt("Entre com um número: "))
+}
+alert("Soma dos numeros pares: "+somaPar+"\nSoma dos numeros impares: "+somaImpar)
+```
 
 
 
