@@ -50,6 +50,43 @@ while ( x > 3 ) {
 ```
 Ver vídeo com este exemplo:  https://youtu.be/5nabBOi0rgg
 
+## Repetições 
+
+**(Exemplo 1)** Implemente um programa que receba a idade de várias pessoas e informa se cada um delas é menor de idade ou idosa. Para encerrar, o usuário deve digitar a idade -1. 
+
+Em problemas de repetição, é preciso os comandos a serem repetidos. Nesta questão as seguintes ações devem ser ressaltadas: 
+* Receber a idade da pessoa
+* Verificar se a idade é diferente de -1 (condição de parada)
+* Avisar se é menor de idade ou idosa
+
+Reflexões importantes: 
+* Quais as entradas do programa?
+  * Idade de uma  pessoa
+* Quais as saídas?
+  * Para cada pessoa, “Menor de idade”, “Idosa” ou sem saída.
+* O que deve ser repetido?
+  * Verificar se a idade é diferente de -1
+    * Avisa se é menor de idade ou idosa
+  * Receber a idade
+* Como controlar as repetições?
+  * Valor da idade. Se for -1, o programa deve encerrar  (condição de parada)
+
+
+
+
+```javascript
+   n1 = parseFloat(prompt("Entre com a nota 1"))
+   while ( n1 != -1 ){
+      n2 = parseFloat(prompt("Entre com a nota 2"))
+      n3 = parseFloat(prompt("Entre com a nota 3"))
+      media = (n1 + n2 + n3)/3
+      alert(media) 
+      n1 = parseFloat(prompt("Entre com a nota 1")) 
+   }
+```
+
+
+
 ## Aplicações 
 
 ### Repetição Simples 
