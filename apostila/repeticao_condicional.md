@@ -71,8 +71,31 @@ Reflexões importantes:
 * Como controlar as repetições?
   * Valor da idade. Se for -1, o programa deve encerrar  (condição de parada)
 
+```javascript
+   var idade = parseInt(prompt("Entre com a idade: "))
+   while ( idade !== -1 ){
+      if ( idade > 60 ){
+         alert("idoso")
+      }
+      if ( idade < 18 ){
+         alert("menor de idade") 
+      }
+      idade = parseInt(prompt("Entre com a idade: "))
+   }
+``` 
 
+**(Exemplo 2)** Implemente um programa que recebe as 3 notas de vários alunos e escreve a média parcial de cada um deles até o usuário digitar -1 para a primeira nota.
 
+Reflexões importantes: 
+* Quais as entradas do programa?
+  * 3 notas de uma quantidade indefinida de alunos
+* Quais as saídas?
+  * Média parcial dos alunos
+* O que deve ser repetido?
+  * A leitura das 3 notas
+  * O cálculo e a escrita da média parcial
+* Como controlar as repetições?
+  * Valor da primeira nota. Se for -1, o programa deve encerrar  (condição de parada)
 
 ```javascript
    n1 = parseFloat(prompt("Entre com a nota 1"))
@@ -86,6 +109,15 @@ Reflexões importantes:
 ```
 
 
+**(Exemplo 3)** Implemente um programa que mostra todos os números de 0 à 100. 
+
+```javascript
+x = 0
+while ( x <= 100 ) {
+    console.log(x)
+    x++ 
+}
+```
 
 ## Aplicações 
 
