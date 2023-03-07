@@ -44,7 +44,7 @@ Logo:
   * **Daniela é a mais nova das 3 pessoas (Verdadeiro)**
 
 ### Exemplo 3
-* “Se o RU servir cuscuz hoje então eu jantarei no RU”
+* “Se o RU servir cuscuz hoje, então eu jantarei no RU”
 * “O RU serviu cuscuz”
 * Logo, eu jantei no RU
 
@@ -53,7 +53,7 @@ Logo:
 * Ele possui um barco pequeno, que transporta **uma coisa de cada vez** (um carneiro ou um fardo de capim)
 * Se ele deixar o carneiro junto do capim em alguma das margens do rio, o carneiro come o capim
 
-[Slide da respostas do problema do pastor](https://docs.google.com/presentation/d/1YtX44dXYObqUFsdzCgRvY3sOjjj8UarzH5BIv_754AA/edit?usp=sharing) 
+[Slide da resposta do problema do pastor](https://docs.google.com/presentation/d/1YtX44dXYObqUFsdzCgRvY3sOjjj8UarzH5BIv_754AA/edit?usp=sharing) 
 
 Sugestão de resolução:
 1. Levar o carneiro para a margem leste
@@ -63,6 +63,11 @@ Sugestão de resolução:
 1. Levar o segundo fardo para margem leste
 1. Voltar para margem oeste
 1. Levar o carneiro para margem leste
+
+### Outros desafios de lógica 
+* [Torre de Hanói](https://www.noas.com.br/ensino-fundamental-1/matematica/torre-de-hanoi/)
+* [Na Medida Certa](https://www.sitededicas.com.br/desafios-logicos-na-medida-certa.htm) 
+
 
 ### Por que estudar lógica e algoritmos? 
 * Aprender **lógica** é aprender a como **“pensar correto”** para resolver um problema
@@ -171,6 +176,10 @@ Códigos com exemplos na página de LoP no GitHub:
 * https://github.com/ect-info/lop/tree/master/codigos 
 * https://github.com/ect-info/lop 
 * https://github.com/ect-info/codigos-jogo 
+
+## Outros exemplos 
+* [Maior que 25](https://whimsical.com/maior-que-25-FYNih4GsfHeXh3tpEz3Min) 
+* [Algoritmo representado em forma de um fluxograma](http://www.cristiancechinel.pro.br/my_files/algorithms/bookhtml/node15.html)
 
 ## Programação 
 
