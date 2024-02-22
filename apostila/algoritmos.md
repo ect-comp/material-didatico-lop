@@ -16,6 +16,16 @@ Um algoritmo é como uma receita culinária: ele descreve passo a passo o que pr
 
 ## Exemplos de Algoritmos
 
+### Algoritmo para Fazer um Sanduíche:
+1. Pegue duas fatias de pão.
+1. Espalhe manteiga em uma fatia de pão.
+1. Coloque queijo e presunto na fatia de pão com manteiga.
+1. Cubra com a segunda fatia de pão.
+1. Corte o sanduíche ao meio.
+1. Se quiser, adicione alface e tomate.
+
+Este é um algoritmo simples que descreve como fazer um sanduíche. Cada passo é claro e direto.
+
 ### Como chegar ao parque?
 
 1. Saia de casa em direção ao mercado
