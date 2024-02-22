@@ -1,4 +1,4 @@
-# Expressão aritmética
+# Expressão Aritmética
 
 Uma expressão aritmética em uma linguagem de programação é uma combinação de números, operadores matemáticos e variáveis que, quando avaliada, produz um valor numérico. Ela é como uma fórmula matemática que pode ser calculada pelo computador para obter um resultado.
 
