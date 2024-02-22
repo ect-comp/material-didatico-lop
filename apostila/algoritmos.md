@@ -1,6 +1,18 @@
 # Algoritmos 
 
+Um algoritmo é uma sequência de instruções bem definidas e organizadas que visam resolver um problema ou realizar uma tarefa específica. Na computação, os algoritmos são a base de todo o processo de resolução de problemas e são essenciais para o desenvolvimento de programas de software.
+
+Um algoritmo é como uma receita culinária: ele descreve passo a passo o que precisa ser feito para alcançar um resultado desejado. Assim como uma receita detalha os ingredientes necessários e as etapas para preparar um prato, um algoritmo descreve os passos necessários para resolver um problema computacional.
+
 **Definição 1:** "É uma sequência lógica de passos que visa atingir um objetivo específico."
+
+## Características dos Algoritmos
+
+1. **Definição precisa**: Cada passo do algoritmo deve ser claramente definido e compreensível.
+1. **Entrada e Saída**: Um algoritmo geralmente recebe uma entrada (dados iniciais) e produz uma saída (resultado final) após executar todas as etapas.
+1. **Finitude**: O algoritmo deve ter um número finito de passos e deve eventualmente terminar, ou seja, deve chegar a uma conclusão em um tempo finito.
+1. **Eficiência**: Um algoritmo eficiente é aquele que resolve o problema de forma rápida e com uso mínimo de recursos.
+
 
 ## Exemplos de Algoritmos
 
@@ -17,6 +29,13 @@
 1. Tomar o café da manhã
 1. Pegar a mochila
 1. Sair para a parada de ônibus
+
+### Algoritmo para contar até 10
+1. Comece com o número 1.
+1. Adicione 1 ao número atual.
+1. Se o número for menor ou igual a 10, repita o passo 2.
+1. Pare quando chegar a 10.
+1. Este algoritmo mostra como contar até 10 usando repetição.
 
 ## Exercício 1
 O pneu do carro furou, qual o algoritmo que você usaria para substituir o pneu furado?
