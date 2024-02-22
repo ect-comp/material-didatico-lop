@@ -246,7 +246,10 @@ c. Multiplicar o resultado dos passos a) e b)
 
 ## Cursos Online 
 * [Introdução a Programação da Khan Academy](https://pt.khanacademy.org/computing/computer-programming/programming) 
-* [Introdução a Computação na Cursera](https://www.coursera.org/learn/ciencia-computacao-python-conceitos) 
+* [Introdução a Computação na Cursera](https://www.coursera.org/learn/ciencia-computacao-python-conceitos)
+* Slides de aulas da disciplina de Lógica de Porgramação da ECT-UFRN, consultados em 10/03/2022.
+* ChatGPT 3.5, https://chat.openai.com/, consultado em 22/02/2024.
+
 
 
 
