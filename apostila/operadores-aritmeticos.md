@@ -1,8 +1,31 @@
 # Expressão aritmética
 
+Uma expressão aritmética em uma linguagem de programação é uma combinação de números, operadores matemáticos e variáveis que, quando avaliada, produz um valor numérico. Ela é como uma fórmula matemática que pode ser calculada pelo computador para obter um resultado.
+
 **Definição:** Expressão aritmética é aquela cujos operadores são aritméticos e os operandos são constantes ou variáveis numéricas.
 
-## Operadores 
+Principais componentes de uma expressão aritmética: 
+
+1. **Números**: São os valores numéricos que compõem a expressão, como 2, 5, 10, etc.
+1. **Operadores Matemáticos**: São os símbolos que indicam operações a serem executadas. Os operadores mais comuns são:
+    1. Adição (+)
+    1. Subtração (-)
+    1. Multiplicação (*)
+    1. Divisão (/)
+    1. Exponenciação (**) - em JavaScript 
+    1. Módulo (%) - retorna o resto da divisão entre dois números
+1. **Variáveis**: São símbolos que representam valores que podem variar durante a execução do programa. Por exemplo, se tivermos a variável "idade", ela pode ser usada em uma expressão aritmética para representar a idade de uma pessoa.
+
+Exemplo de uma expressão aritmética: 
+```javascript
+2 + 3 * (idade - 5)
+```
+Nesta expressão, contêm números (2, 3, 5), operadores (+, *, -), e uma variável (idade). Quando esta expressão é avaliada, ela primeiro resolve a operação dentro dos parênteses, subtrai 5 da variável "idade", multiplica o resultado por 3, e depois adiciona 2 ao resultado final.
+
+Em linguagens de programação, expressões aritméticas são frequentemente usadas em diversas situações, como calcular valores, atualizar variáveis, tomar decisões com base em resultados numéricos, entre outras. Elas formam a base para cálculos matemáticos e são uma parte fundamental da programação.
+
+
+## Tabela com alguns operadores 
 
 Símbolo em JavaScript | Função | Exemplo 
 ----------------------|--------|----------
@@ -25,8 +48,8 @@ Exemplos de expressões:
 * `A - B * C`
 * `(A * (B + C)) % D`
 
-## Exercício
-Resolva a expressão: `48 / 2 * (9+3)`
+### Reflexão
+Resolvendo a expressão: `48 / 2 * (9+3)`
 
 Método 1:
 ```
@@ -44,7 +67,7 @@ Método 2:
 2
 ```
 
-Operadores de mesma precedência são resolvidos da esquerda para direita na expressão. O único resultado da expressão `48 / 2 * (9 + 3)` é 288. 
+Os operadores de mesma precedência são resolvidos da esquerda para direita na expressão. O único resultado da expressão `48 / 2 * (9 + 3)` é 288. 
 
 ## Exercícios: 
 
@@ -90,5 +113,6 @@ alert(media)
 ```
 
 ## Referências 
-
-* [_Developer Mozilla_: Operadores aritméticos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_aritm%C3%A9ticos)
+* [Developer Mozilla: Operadores aritméticos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_aritm%C3%A9ticos)
+* Slides de aulas da disciplina de Lógica de Porgramação da ECT-UFRN, consultados em 10/03/2022.
+* ChatGPT 3.5, https://chat.openai.com/, consultado em 22/02/2024.
