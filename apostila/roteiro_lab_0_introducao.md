@@ -1,5 +1,9 @@
 # Introdução Prática sobre Algoritmos 
 
+## Ferramentas 
+* Sistema LoP, https://lop.natalnet.br/
+* Discord, https://discord.com/
+  
 ## Atividades Introdutórias a Lógica de Programação
 Jogos para os programadores de amanhã https://blockly-games.appspot.com/
 
