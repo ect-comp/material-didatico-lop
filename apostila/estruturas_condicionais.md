@@ -103,5 +103,43 @@ console.log(a >= b);  // Falso, porque 5 não é maior ou igual a 10
 console.log(a <= b);  // Verdadeiro, porque 5 é menor ou igual a 10
 ```
 
+## Estrutura Condicional Composta 
+A estrutura condicional composta permite a seleção entre dois blocos de instruções a partir de uma única condição.
+
+```javascript
+if ( <condição> ) 
+{
+  <instrução 1>
+  <instrução 2>
+  <instrução 3>
+
+} 
+else 
+{
+  <instrução 4>
+  <instrução 5>
+  <instrução 6>
+}
+```
+## Atividade 2
+Escreva um algoritmo que recebe as 3 notas de um aluno e escreve na tela a palavra “Aprovado” caso sua média seja maior ou igual a 5.0, e “Reprovado”, caso contrário.
+
+```javascript
+nota1 = parseFloat(prompt("Entre com a nota 1:"))
+nota2 = parseFloat(prompt("Entre com a nota 2:"))
+nota3 = parseFloat(prompt("Entre com a nota 3:"))
+
+media = (nota1 + nota2 + nota3)/3
+
+if (media > 5){
+    alert("Aprovado")
+}
+else {
+    alert("Reprovado")
+}
+```
+
+
+
 ## Referências
 1. [Expressões e operadores em  https://developer.mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators) 
