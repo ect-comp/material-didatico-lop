@@ -1,10 +1,22 @@
 # Entrada e Saída de Dados
 
-Dispositivos de entrada
-* Teclado, mouse, tela sensível ao toque, sensor de temperatura, etc.
+A entrada de dados refere-se ao processo de fornecer informações ou comandos para um sistema computacional. Esses dados podem ser de diferentes tipos, como texto, números, comandos de controle, entre outros, e são inseridos no sistema por meio de dispositivos de entrada.
 
-Dispositivos de saída
-* Tela, caixas de som, impressora, leds, etc. 
+Exemplos de dispositivos de entrada:
+* Teclado,
+* Mouse,
+* Tela sensível ao toque,
+* Sensor de temperatura,
+* Microfone. 
+
+
+Os dispositivos de saída em computação são periféricos ou componentes do sistema que apresentam informações, resultados ou dados processados ​​para os usuários de uma forma compreensível. Eles são responsáveis por comunicar os resultados das operações realizadas pelo computador ou pelos dispositivos conectados ao sistema.
+
+Exemplos de dispositivos de saída: 
+* Monitor ou tela,
+* Caixas de som,
+* Impressora,
+* LEDs. 
 
 Nos nossos programas
 * **Entrada:** teclado
