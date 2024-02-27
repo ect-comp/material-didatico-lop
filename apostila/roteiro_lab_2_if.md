@@ -1,4 +1,4 @@
-# Laboratório 1
+# Laboratório 2
 Prática com: 
 * Estruturas condicionais 
 * Operadores lógicos
@@ -110,10 +110,20 @@ alert(menor)
  
 
 ### Exercícios Extras
-
-
-
 ## Dia 2: Prática  
 Resolver os exercícios da lista "Estrutura Condicional - Lista Prática" da [Plataforma LoP](https://lop.natalnet.br). 
 
 Ordem das questões:
+* Calcular Índice de Massa Corporal (IMC) - parte 1
+* Índice de Massa Corporal (IMC) - parte 2
+* IMC simples com 2 decisões
+* IMC novamente com 2 decisões
+* Encontrando números pares
+* Par ou impar
+* Média com 3 situações de decisão
+* Média com 3 situações de decisão - parte 2
+* Idades e permissões
+* Divisível por 3 e por 4 ao mesmo tempo
+* Categorias de natação
+* Divisível por 3 e por 4 - versão mais complexa
+* Divisível por 3 e por 4 - versão ainda mais complexa
