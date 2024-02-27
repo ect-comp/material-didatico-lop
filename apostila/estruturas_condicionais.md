@@ -1,5 +1,7 @@
 # Estruturas Condicionais
 
+## Introdução
+
 Uma estrutura condicional é uma construção que permite que um programa tome decisões com base em condições específicas. Ela permite que o programa avalie uma expressão lógica e execute diferentes conjuntos de instruções, dependendo se a condição é verdadeira ou falsa.
 
 A estrutura condicional mais comum é o "if-else", que geralmente segue esta sintaxe:
@@ -16,7 +18,7 @@ Funcionamento de uma estrutura condicional em um programa:
 1. **Execução do Bloco de Código**: Se a condição for verdadeira, o programa executa o bloco de código associado ao "então". Isso pode incluir uma ou várias instruções que serão executadas se a condição for atendida.
 1. **Execução do Bloco de Código Alternativo**: Se a condição não for verdadeira, o programa pode executar um bloco de código alternativo associado ao "senão", ou pode simplesmente continuar a execução do código após a estrutura condicional.
 
-### Bloco de Código 
+## Bloco de Código 
 Um bloco de código é um conjunto de instruções agrupadas entre chaves `{}`. Esses blocos são usados para agrupar múltiplas instruções em uma única unidade de execução. Os blocos de código são comumente usados em estruturas condicionais (como `if`, `else`, `else if`), loops ( `for`, `while`, `do-while`), funções e em muitos outros contextos onde é necessário agrupar instruções.
 
 Sintaxe para um bloco de código em JavaScript: 
@@ -25,7 +27,7 @@ Sintaxe para um bloco de código em JavaScript:
     // Aqui vão as instruções do bloco de código
 }
 ```
-### Exemplos
+## Exemplo Inicial 
 
 Exemplo de um código em JavaScript para a estrutura condicional `if-else`: 
 ```javascript
@@ -61,11 +63,11 @@ if ( <condição> )
 
 }
 ```
+## Atividade 1 
+Escreva um algoritmo que recebe as 3 notas de um aluno e escreve na tela a palavra “Aprovado” caso sua média seja maior ou igual a 5.0
 
 ## Operadores relacionais
-Utilizado quando for necessário realizar comparações. 
-* Os operandos de operadores relacionais são variáveis, constantes ou expressões aritméticas
-* Uma operação relacional resulta em **Verdadeiro** ou **Falso**
+Operadores relacionais são utilizados em linguagens de programação para comparar valores e expressões, resultando em um valor booleano (**verdadeiro** ou **falso**) que indica se a relação entre os operandos é verdadeira ou falsa. Esses operadores são comumente usados em estruturas condicionais e em expressões que envolvem tomada de decisões.
 
 Símbolo em JavaScript | Descrição | Exemplo que retorna verdadeiro 
 ----------------------|-----------|----------
@@ -76,6 +78,19 @@ Maior que (>) | Retorna verdadeiro caso o operando da esquerda seja maior que o 
 Maior que ou igual (>=) | Retorna verdadeiro caso o operando da esquerda seja maior ou igual ao da direita. |  var2 >= var1
 Menor que (<) | Retorna verdadeiro caso o operando da esquerda seja menor que o da direita. | var1 < var2
 Menor que ou igual (<=) | 	Retorna verdadeiro caso o operando da esquerda seja menor ou igual ao da direita. | var1 <= var2
+
+Exemplos simples com estes operadores: 
+```javascript
+let a = 5;
+let b = 10;
+
+console.log(a == b);  // Falso, porque 5 não é igual a 10
+console.log(a != b);  // Verdadeiro, porque 5 é diferente de 10
+console.log(a > b);   // Falso, porque 5 não é maior que 10
+console.log(a < b);   // Verdadeiro, porque 5 é menor que 10
+console.log(a >= b);  // Falso, porque 5 não é maior ou igual a 10
+console.log(a <= b);  // Verdadeiro, porque 5 é menor ou igual a 10
+```
 
 ## Referências
 1. [Expressões e operadores em  https://developer.mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators) 
