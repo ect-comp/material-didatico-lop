@@ -61,3 +61,8 @@ Para ler um número inteiro:
 ```javascript
 valor = parseInt(prompt("Mensagem"));
 ```
+
+
+## Referências 
+* Slides de aulas da disciplina de Lógica de Porgramação da ECT-UFRN, consultados em 10/03/2023.
+* ChatGPT 3.5, https://chat.openai.com/, consultado em 22/02/2024.
