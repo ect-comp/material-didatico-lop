@@ -64,7 +64,18 @@ if ( <condição> )
 }
 ```
 ## Atividade 1 
-Escreva um algoritmo que recebe as 3 notas de um aluno e escreve na tela a palavra “Aprovado” caso sua média seja maior ou igual a 5.0
+Escreva um algoritmo que recebe as 3 notas de um aluno e escreve na tela a palavra “Aprovado” caso sua média seja maior ou igual a 5.0. 
+```javascript
+nota1 = parseFloat(prompt("Entre com a nota 1:"))
+nota2 = parseFloat(prompt("Entre com a nota 2:"))
+nota3 = parseFloat(prompt("Entre com a nota 3:"))
+
+media = (nota1 + nota2 + nota3)/3
+
+if (media > 5){
+    alert("Aprovado")
+}
+```
 
 ## Operadores relacionais
 Operadores relacionais são utilizados em linguagens de programação para comparar valores e expressões, resultando em um valor booleano (**verdadeiro** ou **falso**) que indica se a relação entre os operandos é verdadeira ou falsa. Esses operadores são comumente usados em estruturas condicionais e em expressões que envolvem tomada de decisões.
