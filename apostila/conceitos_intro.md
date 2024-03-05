@@ -13,12 +13,12 @@ As variáveis são essenciais em programação, pois permitem que os programador
 
 **Definição**: Uma variável é um espaço para manter informações durante a execução de um programa. 
 
-## Memória 
+### Memória 
 
 A memória é um elemento com capacidade para armazenar qualquer tipo de informação (dados e programas). Ela é dividida em milhares ou milhões de "compartimentos" e cada compartimento tem um número de localização chamado de **endereço de memória**. 
 
 
-## Variáveis na memória 
+### Variáveis na memória 
 
 Os programas usam a memória para armazenar os dados fornecidos pelo usuário e os resultados parciais das operações sobre estes dados. No passado, para recuperar um dado na memória do computador era necessário saber o seu endereço. Porém, para um programador lembrar de cada número relativo ao endereço de memória utilizado é muito trabalhoso. Logo, as variáveis surgem para resolver esse problema, ao invés de lembrar de um número, basta lembrar do nome da variável para poder acessá-la.    
 
@@ -49,7 +49,7 @@ z = 1;
 ``` 
 O código acima possui uma declaração de uma variável x, uma declaração de uma variável y com valor inicial igual a 0 e uma criação de uma variável z com valor 1 considerando que z aparece pela primeira vez no código. 
 
-## Exercícios
+### Exercícios
 
 Declare variáveis no console do seu navegador de internet:   
 * Use o comando typeof para checar o tipo da variável 
@@ -58,7 +58,7 @@ Declare variáveis no console do seu navegador de internet:
 * Atribua um valor textual e verifique o tipo  
 * Faça o mesmo para uma variável y criada por uma atribuição 
 
-## Nome de variáveis
+### Nome de variáveis
 
 Regras para nomes de variáveis
 * Deve iniciar por uma letra ou por o símbolo '_'
@@ -94,7 +94,7 @@ Recomendações para criação de variáveis
   * Com letra maiúscula: umNomeGrande
   * Com '_': um_nome_grande
  
-## Usando variáveis
+### Usando variáveis
 Uma vez que uma variável tenha sido declarada e atribuída, ela pode ser usada em expressões e operações dentro do programa. 
 
 Para atribuir um valor a uma variável use o operador `=`
@@ -116,7 +116,7 @@ Em resumo, uma variável em uma linguagem de programação é um contêiner de d
 
 
 
-# Entrada e Saída de Dados
+## Entrada e Saída de Dados
 
 A entrada de dados refere-se ao processo de fornecer informações ou comandos para um sistema computacional. Esses dados podem ser de diferentes tipos, como texto, números, comandos de controle, entre outros, e são inseridos no sistema por meio de dispositivos de entrada.
 
@@ -141,7 +141,7 @@ Nos nossos programas
 * **Saída:** tela (janela, terminal ou prompt)
 
 
-## Saída de dados
+### Saída de dados
 
 Imprime ou apresenta textos e variáveis para o usuário do programa.  
 
@@ -156,7 +156,7 @@ Exemplo de código para mostrar um texto na tela:
 alert("Olá Mundo!");
 ```
 
-## Entrada de dados
+### Entrada de dados
 
 Lê o valor digitado e armazena em uma variável. A valor de entrada deve ser compatível com o tipo de dado da variável. Quando o camando de leitura de dados é executado, o programa fica esperando indefinidamente até que a entrada de dados seja concluída ou fornecida. 
 
@@ -181,7 +181,7 @@ valor = parseInt(prompt("Mensagem"));
 ```
 
 
- # Expressão Aritmética
+## Expressão Aritmética
 
 Uma expressão aritmética em uma linguagem de programação é uma combinação de números, operadores matemáticos e variáveis que, quando avaliada, produz um valor numérico. Ela é como uma fórmula matemática que pode ser calculada pelo computador para obter um resultado.
 
@@ -208,7 +208,7 @@ Nesta expressão, contêm números (2, 3, 5), operadores (+, *, -), e uma variá
 Em linguagens de programação, expressões aritméticas são frequentemente usadas em diversas situações, como calcular valores, atualizar variáveis, tomar decisões com base em resultados numéricos, entre outras. Elas formam a base para cálculos matemáticos e são uma parte fundamental da programação.
 
 
-## Tabela com alguns operadores 
+### Tabela com alguns operadores 
 
 Símbolo em JavaScript | Função | Exemplo 
 ----------------------|--------|----------
@@ -221,7 +221,7 @@ Símbolo em JavaScript | Função | Exemplo
  `%` | Resto da divisão | 7 % 3
  Sem símbolo | Quociente da divisão inteira | `Math.floor( x / y )`
 
-## Precedência de operadores
+### Precedência de operadores
 
 * Parênteses mais internos
 * `*, /, %`
@@ -231,7 +231,7 @@ Exemplos de expressões:
 * `A - B * C`
 * `(A * (B + C)) % D`
 
-### Reflexão
+#### Reflexão
 Resolvendo a expressão: `48 / 2 * (9+3)`
 
 Método 1:
@@ -252,9 +252,9 @@ Método 2:
 
 Os operadores de mesma precedência são resolvidos da esquerda para direita na expressão. O único resultado da expressão `48 / 2 * (9 + 3)` é 288. 
 
-## Exercícios: 
+### Exercícios: 
 
-### Convertendo de horas para dias
+#### Convertendo de horas para dias
 
 Escreva um programa que recebe um número inteiro de horas e imprime o número equivalente em dias. Ex.: 60 horas = 2,5 dias.
 
@@ -270,7 +270,7 @@ dias = horas / 24
 alert(dias)
 ``` 
 
-### Cálculo do IMC
+#### Cálculo do IMC
 
 Escreva um programa que recebe a altura em metros e a massa em quilos de uma pessoa e calcula seu Índice de Massa Corporal (IMC). A fórmula do IMC é massa dividido por altura ao quadrado. Ver:  
 
@@ -282,7 +282,7 @@ imc = massa / ( altura ** 2)
 alert("IMC: "+imc)  
 ```
 
-### Média Ponderada 
+#### Média Ponderada 
 
 Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno. Considera que a média é ponderada e que o peso de cada nota é: 2, 3 e 5, respectivamente.
 
