@@ -106,6 +106,7 @@ console.log(a <= b);  // Verdadeiro, porque 5 é menor ou igual a 10
 ## Estrutura Condicional Composta 
 A estrutura condicional composta permite a seleção entre dois blocos de instruções a partir de uma única condição.
 
+Sintaxe:
 ```javascript
 if ( <condição> ) 
 {
@@ -139,7 +140,27 @@ else {
 }
 ```
 
+## Estrutura Condicional Aninhada 
+A estrutura condicional aninhada permite a seleção entre diversos blocos de instruções.
 
+Sintaxe:
+```javascript
+if ( <condição> ) 
+{
+  if ( <condição> ) 
+  {
+    <instrução 1> 
+  } 
+  else 
+  {
+    <instrução 2> 
+  }
+} 
+else 
+{
+  <instrução 3> 
+}
+```
 
 ## Referências
 1. [Expressões e operadores em  https://developer.mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators) 
