@@ -252,6 +252,17 @@ if ( x >= 30 ) {
     alert("Não está no intervalo fechado de -5 a 30")
 }
 ```
+## Exercício
+Implemente um programa que mostra a situação do aluno como  “Aprovado” ou “Reprovado” de acordo com sua média final e a quantidade de faltas. O programa deve receber como entradas as faltas e duas notas do aluno. 
+
+* O aluno será reprovado por falta se faltar mais que ¼ das aulas (o número total de aulas é 90);
+* Se o aluno ficar com média no intervalo [3, 5[, ele está em “Recuperação” e deverá fazer prova de reposição; 
+  * Caso o aluno faça prova de reposição, o programa deve pedir para o usuário informar a nota da prova de reposição e substituir na menor nota. 
+* O aluno será aprovado se obtiver média 5 ou maior, senão será reprovado
+
+
 
 ## Referências
-1. [Expressões e operadores em  https://developer.mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators) 
+1. [Expressões e operadores em  https://developer.mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators)
+2. Slides de aulas da disciplina de Lógica de Porgramação da ECT-UFRN, consultados em 10/03/2022.
+3. ChatGPT 3.5, https://chat.openai.com/, consultado em 26/02/2024.
