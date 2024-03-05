@@ -162,5 +162,28 @@ else
 }
 ```
 
+## Atividade 3
+Escreva um algoritmo que recebe as 3 notas de um aluno e escreve na tela a palavra “Aprovado” caso sua média seja maior ou igual a 5.0, “Reprovado” caso sua média seja menor que 3.0, ou “Recuperação” caso sua média esteja entre 3.0 e menor que 5.0.
+
+```javascript
+nota1 = parseFloat(prompt("Entre com a nota 1:"))
+nota2 = parseFloat(prompt("Entre com a nota 2:"))
+nota3 = parseFloat(prompt("Entre com a nota 3:"))
+
+media = (nota1 + nota2 + nota3)/3
+
+if (media > 5){
+    alert("Aprovado")
+}
+else {
+    if (media > 3){
+        alert("Recuperação")
+    }
+    else {
+        alert("Reprovado")
+    }
+}
+```
+
 ## Referências
 1. [Expressões e operadores em  https://developer.mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators) 
