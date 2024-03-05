@@ -1,6 +1,6 @@
 # Introdução  
 
-Uma linguagem de programação é uma linguagem formal que permite que os programadores comuniquem instruções para um computador. Ela é composta por um conjunto de regras sintáticas e semânticas que definem como essas instruções devem ser escritas e interpretadas. A principal função de uma linguagem de programação é permitir que os programadores desenvolvam software, que são conjuntos de instruções que direcionam o funcionamento de um computador para realizar uma determinada tarefa ou resolver um problema específico.
+Neste curso vamos focar na Linguagem de Programação JavaScript. Esta linguagem utiliza um programa interpretador para a sua execução. Uma linguagem de programação é uma linguagem formal que permite que os programadores comuniquem instruções para um computador. Ela é composta por um conjunto de regras sintáticas e semânticas que definem como essas instruções devem ser escritas e interpretadas. A principal função de uma linguagem de programação é permitir que os programadores desenvolvam software, que são conjuntos de instruções que direcionam o funcionamento de um computador para realizar uma determinada tarefa ou resolver um problema específico.
 
 Aqui estão algumas características importantes das linguagens de programação:
 * **Abstração:** As linguagens de programação oferecem abstrações que permitem aos programadores expressar suas intenções em um nível mais alto, sem se preocupar com os detalhes específicos da implementação de hardware.
