@@ -184,6 +184,74 @@ else {
     }
 }
 ```
+## Aplicações
+
+### Teste de Divisibilidade 
+Implemente um programa que verifica se um dado número inteiro é **divisível por 6**. 
+```javascript
+x = parseInt(prompt("Entre com número inteiro:"))
+if ( x % 6 == 0) {
+   alert("Divisível por 6")
+}
+```
+
+Implemente um programa que verifica se um dado número inteiro é **divisível por 3, mas não por 5**.
+```javascript
+x = parseInt(prompt("Entre com número inteiro:"))
+if ( x % 3 == 0) {
+    if ( x % 5 != 0) {
+       alert("Divisível por 3, mas não por 5")
+   }
+}
+```
+
+Implemente um programa que verifica se um dado número inteiro **é ímpar**. Uma possível solução é verificar se o número não é divisível por 2, ou seja, não é par.  
+```javascript
+x = parseInt(prompt("Entre com número inteiro:"))
+if ( x % 2 != 0) {
+   alert("É impar")
+}
+```
+
+Implemente um programa que verifica se um dado número inteiro é **divisível por 4 e por 5**.
+```javascript
+x = parseInt(prompt("Entre com número inteiro:"))
+if ( x % 4 == 0) {
+    if ( x % 5 == 0) {
+       alert("Divisível por 4 e por 5")
+   }
+}
+```
+
+### Teste de Intervalo 
+Implemente um programa que verifica se um dado número é **maior do que 5**, ou seja, está no intervalo aberto de 5 a +infinito. 
+```javascript
+x = parseFloat(prompt("Entre com número:"))
+if ( x > 5 ) {
+   alert("Maior do que 5")
+}
+```
+
+Implemente um programa que verifica se um dado número está no **intervalo fechado de -3.2 a 9.23**.
+```javascript
+x = parseFloat(prompt("Entre com número:"))
+if ( x >= 3.2 ) {
+    if ( x =< 9.23 ) {
+        alert("Maior do que 5")
+    }
+}
+```
+
+Implemente um programa que verifica se um dado número **não está no intervalo fechado de -5 a 30**. Faça uma análise visual deste intervalo. 
+```javascript
+x = parseFloat(prompt("Entre com número:"))
+if ( x <= -5 ) {
+    alert("Não está no intervalo fechado de -5 a 30")
+}
+if ( x >= 30 ) {
+    alert("Não está no intervalo fechado de -5 a 30")
+}
+```
 
 ## Referências
 1. [Expressões e operadores em  https://developer.mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators) 
