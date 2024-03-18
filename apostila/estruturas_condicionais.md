@@ -252,7 +252,7 @@ if ( x >= 30 ) {
     alert("Não está no intervalo fechado de -5 a 30")
 }
 ```
-## Exercício
+## Exercício 1
 Implemente um programa que mostra a situação do aluno como  “Aprovado” ou “Reprovado” de acordo com sua média final e a quantidade de faltas. O programa deve receber como entradas as faltas e duas notas do aluno. 
 
 * O aluno será reprovado por falta se faltar mais que ¼ das aulas (o número total de aulas é 90);
@@ -260,6 +260,31 @@ Implemente um programa que mostra a situação do aluno como  “Aprovado” ou 
   * Caso o aluno faça prova de reposição, o programa deve pedir para o usuário informar a nota da prova de reposição e substituir na menor nota. 
 * O aluno será aprovado se obtiver média 5 ou maior, senão será reprovado
 
+## Expressões lógicas
+* A condição de uma estrutura condicional é sempre uma expressão lógica.
+* **Expressão lógica** é aquela cujos **operadores** são **lógicos** ou **relacionais** e que o resultado da expressão é um valor verdadeiro ou falso.
+
+### Operadores lógicos
+* Os operadores lógicos permitem criar condições complexas a partir de condições simples
+  * Facilitam o raciocínio
+  * Tornam o código mais breve
+* Dominar a estrutura condicional e os operadores lógicos é, CERTAMENTE, a base para se aprender lógica de programação
+* Os operadores lógicos permitem criar condições complexas a partir de condições simples
+  * Os operandos dos operadores lógicos são chamados proposições. Eles possuem dois valores: verdadeiro ou falso.
+  * Uma operação lógica resulta, também, em verdadeiro ou falso.
+* Operadores lógicos em JavaScript:
+
+| Símbolo  | Função |
+| :---: | :---: |
+|   &&   |  E (Conjunção)   |
+|  \|\|  |  OU (Disjunção)  |
+| !  |  Não (Negação)  |
+
+### Atividades 
+1. Implemente um programa, utilzando operadores lógicos, que verifica se um dado número inteiro é divisível por 3, mas não por 5.
+2. Implemente um programa que verifica se um dado número está no intervalo fechado de -3.2 a 9.23, use operadores lógicos. 
+
+### Tabela Verdade   
 
 
 ## Referências
