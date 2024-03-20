@@ -261,24 +261,38 @@ Implemente um programa que mostra a situação do aluno como  “Aprovado” ou 
 * O aluno será aprovado se obtiver média 5 ou maior, senão será reprovado
 
 ## Expressões lógicas
+
+Uma expressão lógica em linguagem de programação é uma construção que resulta em um valor booleano, ou seja, verdadeiro ou falso. Ela combina operandos (valores, variáveis ou outras expressões) com operadores lógicos para formar uma afirmação que pode ser avaliada como verdadeira ou falsa.
+
+As expressões lógicas são frequentemente usadas em estruturas de controle, como condicionais e loops, para tomar decisões com base em condições específicas. Elas também são usadas em validações, algoritmos de busca e outras áreas da programação onde a lógica booleana é necessária.
+
+Principais componentes das expressões lógicas:
 * A condição de uma estrutura condicional é sempre uma expressão lógica.
 * **Expressão lógica** é aquela cujos **operadores** são **lógicos** ou **relacionais** e que o resultado da expressão é um valor verdadeiro ou falso.
 
 ### Operadores lógicos
-* Os operadores lógicos permitem criar condições complexas a partir de condições simples
-  * Facilitam o raciocínio
-  * Tornam o código mais breve
-* Dominar a estrutura condicional e os operadores lógicos é, CERTAMENTE, a base para se aprender lógica de programação
-* Os operadores lógicos permitem criar condições complexas a partir de condições simples
-  * Os operandos dos operadores lógicos são chamados proposições. Eles possuem dois valores: verdadeiro ou falso.
-  * Uma operação lógica resulta, também, em verdadeiro ou falso.
-* Operadores lógicos em JavaScript:
+
+Expressões lógicas desempenham um papel fundamental na programação, permitindo aos desenvolvedores criar condições complexas a partir de condições simples. Por meio dos operadores lógicos, como AND (E), OR (OU) e NOT (NÃO), é possível combinar várias condições para formar expressões mais elaboradas.
+
+Os operadores lógicos facilitam o raciocínio ao permitir que os programadores expressem de forma clara e concisa as condições que desejam avaliar em seus programas. Ao utilizar expressões lógicas, é possível criar instruções que respondam a uma ampla gama de situações e cenários, tornando o código mais adaptável e flexível.
+
+Além disso, as expressões lógicas tornam o código mais breve, pois permitem que várias condições sejam avaliadas em uma única linha de código. Isso resulta em um código mais limpo e legível, facilitando a compreensão e manutenção do programa.
+
+Os operandos dos operadores lógicos são chamados proposições. Essas proposições são declarações ou expressões que podem ser avaliadas como verdadeiras ou falsas. Elas são a base sobre a qual os operadores lógicos operam, e cada proposição possui um de dois valores possíveis: verdadeiro ou falso.
+
+Por exemplo, considere as proposições "3 é maior que 2" e "7 é menor que 5". Ambas são expressões que podem ser avaliadas como verdadeiras ou falsas. No primeiro caso, a proposição é verdadeira, enquanto no segundo caso, é falsa.
+
+Quando essas proposições são combinadas com operadores lógicos, uma operação lógica é realizada. Essa operação resulta em outra proposição que também pode ser avaliada como verdadeira ou falsa, dependendo dos valores das proposições originais e do tipo de operador lógico utilizado. É importante ressaltar que uma proposição é uma afirmação individual que pode ser verdadeira ou falsa, uma expressão lógica é uma combinação de proposições e operadores lógicos que produz um valor booleano quando avaliada. Logo, as expressões lógicas são construídas a partir de proposições, mas não são idênticas a elas.
+ 
+Operadores lógicos em JavaScript:
 
 | Símbolo  | Função |
 | :---: | :---: |
 |   &&   |  E (Conjunção)   |
 |  \|\|  |  OU (Disjunção)  |
 | !  |  Não (Negação)  |
+
+Portanto, as expressões lógicas são uma ferramenta poderosa na programação, fornecendo aos desenvolvedores uma maneira eficiente de criar condições e tomadas de decisão em seus programas, facilitando o desenvolvimento de software robusto e eficaz. Dominar a estrutura condicional e os operadores lógicos é, certamente, a base para se aprender lógica de programação. 
 
 ### Atividades 
 1. Implemente um programa, utilzando operadores lógicos, que verifica se um dado número inteiro é divisível por 3, mas não por 5.
