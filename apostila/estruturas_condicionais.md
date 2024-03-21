@@ -278,12 +278,14 @@ Os operadores lógicos facilitam o raciocínio ao permitir que os programadores 
 
 Além disso, as expressões lógicas tornam o código mais breve, pois permitem que várias condições sejam avaliadas em uma única linha de código. Isso resulta em um código mais limpo e legível, facilitando a compreensão e manutenção do programa.
 
-Os operandos dos operadores lógicos são chamados proposições. Essas proposições são declarações ou expressões que podem ser avaliadas como verdadeiras ou falsas. Elas são a base sobre a qual os operadores lógicos operam, e cada proposição possui um de dois valores possíveis: verdadeiro ou falso.
+Em uma expressão lógica, os operandos dos operadores lógicos são chamados proposições. Essas proposições são declarações ou expressões que podem ser avaliadas como verdadeiras ou falsas. Elas são a base sobre a qual os operadores lógicos operam, e cada proposição possui um de dois valores possíveis: verdadeiro ou falso.
 
 Por exemplo, considere as proposições "3 é maior que 2" e "7 é menor que 5". Ambas são expressões que podem ser avaliadas como verdadeiras ou falsas. No primeiro caso, a proposição é verdadeira, enquanto no segundo caso, é falsa.
 
 Quando essas proposições são combinadas com operadores lógicos, uma operação lógica é realizada. Essa operação resulta em outra proposição que também pode ser avaliada como verdadeira ou falsa, dependendo dos valores das proposições originais e do tipo de operador lógico utilizado. É importante ressaltar que uma proposição é uma afirmação individual que pode ser verdadeira ou falsa, uma expressão lógica é uma combinação de proposições e operadores lógicos que produz um valor booleano quando avaliada. Logo, as expressões lógicas são construídas a partir de proposições, mas não são idênticas a elas.
  
+Portanto, as expressões lógicas são uma ferramenta poderosa na programação, fornecendo aos desenvolvedores uma maneira eficiente de criar condições e tomadas de decisão em seus programas, facilitando o desenvolvimento de software robusto e eficaz. Dominar a estrutura condicional e os operadores lógicos é, certamente, a base para se aprender lógica de programação. 
+
 Operadores lógicos em JavaScript:
 
 | Símbolo  | Função |
@@ -292,13 +294,86 @@ Operadores lógicos em JavaScript:
 |  \|\|  |  OU (Disjunção)  |
 | !  |  Não (Negação)  |
 
-Portanto, as expressões lógicas são uma ferramenta poderosa na programação, fornecendo aos desenvolvedores uma maneira eficiente de criar condições e tomadas de decisão em seus programas, facilitando o desenvolvimento de software robusto e eficaz. Dominar a estrutura condicional e os operadores lógicos é, certamente, a base para se aprender lógica de programação. 
 
 ### Atividades 
 1. Implemente um programa, utilzando operadores lógicos, que verifica se um dado número inteiro é divisível por 3, mas não por 5.
 2. Implemente um programa que verifica se um dado número está no intervalo fechado de -3.2 a 9.23, use operadores lógicos. 
 
 ### Tabela Verdade   
+Uma tabela verdade é uma tabela que mostra todas as possíveis combinações de valores de verdade para uma expressão lógica. Essas tabelas são usadas para determinar o resultado de uma expressão lógica em todas as suas diferentes condições.
+
+As tabelas verdade são construídas listando todas as combinações possíveis de valores verdadeiros (V) e falsos (F) para as proposições envolvidas na expressão lógica. Em seguida, o valor verdadeiro ou falso resultante da expressão é determinado para cada combinação.
+
+As tabelas verdade são úteis para entender o comportamento de expressões lógicas complexas, especialmente quando envolvem múltiplas proposições e operadores lógicos. Elas ajudam os programadores a visualizar todas as possíveis situações e a determinar como uma expressão lógica se comportará em cada uma delas.
+
+
+#### Operador Lógico E 
+
+O operador lógico E, representado por "&&", retorna verdadeiro apenas se ambas as proposições envolvidas forem verdadeiras. Se pelo menos uma das proposições for falsa, o resultado será falso.
+
+A tabela verdade do operador lógico E é apresentada a seguir: 
+
+| A | B | A && B |
+|---|---|--------|
+| V | V |   V    |
+| V | F |   F    |
+| F | V |   F    |
+| F | F |   F    |
+
+Na tabela verdade:
+* Quando A e B são ambas verdadeiras (V && V), o resultado é verdadeiro (V).
+* Quando A é verdadeira e B é falsa (V && F), o resultado é falso (F).
+* Quando A é falsa e B é verdadeira (F && V), o resultado é falso (F).
+* Somente quando ambas A e B são falsas (F && F), o resultado é falso (F).
+
+O operador lógico E é útil quando queremos que todas as condições sejam atendidas para que uma determinada ação ocorra. Se qualquer uma das condições não for atendida, o resultado será falso. Isso é especialmente útil em situações onde múltiplas condições devem ser verdadeiras para que um determinado bloco de código seja executado.
+
+#### Operador Lógico OU 
+O operador lógico OU, representado por "||", retorna verdadeiro se pelo menos uma das proposições envolvidas for verdadeira. Isso significa que ele retorna falso apenas se ambas as proposições forem falsas.
+
+A tabela verdade do operador lógico OU é apresentada a seguir: 
+
+| A | B | A \|\| B |
+|---|---|--------|
+| V | V |   V    |
+| V | F |   V    |
+| F | V |   V    |
+| F | F |   F    |
+
+Nesta tabela verdade:
+
+* Quando A e B são ambas verdadeiras (V || V), o resultado é verdadeiro (V).
+* Quando A é verdadeira e B é falsa (V || F), o resultado é verdadeiro (V).
+* Quando A é falsa e B é verdadeira (F || V), o resultado é verdadeiro (V).
+* Somente quando ambas A e B são falsas (F || F), o resultado é falso (F).
+
+Essencialmente, o operador lógico OU verifica se pelo menos uma das proposições é verdadeira. Se pelo menos uma delas for verdadeira, o resultado será verdadeiro. Isso é útil quando queremos executar um bloco de código se qualquer uma das condições for atendida, sem a necessidade de ambas serem verdadeiras.
+
+#### Operador de Negação
+O operador de negação, representado por "!", inverte o valor de uma proposição. Em outras palavras, se a proposição for verdadeira, a negação será falsa, e se a proposição for falsa, a negação será verdadeira.
+
+A tabela verdade do operador lógico Negação é apresentada a seguir:
+
+| A | !A |
+|---|----|
+| V |  F |
+| F |  V |
+
+Na tabela verdade:
+
+* Quando A é verdadeira, sua negação (!A) é falsa.
+* Quando A é falsa, sua negação (!A) é verdadeira.
+
+O operador lógico Negação é frequentemente usado para inverter o resultado de uma condição. Por exemplo, se queremos verificar se uma variável é diferente de zero, podemos usar a negação da condição "a variável é igual a zero" para obter o resultado desejado: 
+```javascript
+x = 5;
+if (!(x == 0)) {
+    // Executa se x for diferente de zero
+}
+```
+
+No exemplo acima, a negação da condição "x é igual a zero" garante que o bloco de código seja executado apenas se x for diferente de zero. Isso demonstra como o operador de negação pode ser útil para controlar o fluxo do programa com base em condições específicas.
+
 
 
 ## Referências
