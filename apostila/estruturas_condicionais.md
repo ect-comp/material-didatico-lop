@@ -311,6 +311,16 @@ As tabelas verdade são úteis para entender o comportamento de expressões lóg
 
 O operador lógico E, representado por "&&", retorna verdadeiro apenas se ambas as proposições envolvidas forem verdadeiras. Se pelo menos uma das proposições for falsa, o resultado será falso.
 
+Exemplos de afirmações usando o operador lógico E, expressas de linguagem natural:
+* "Eu vou comprar sorvete se estiver calor e eu tiver dinheiro no bolso."
+  * Esta afirmação implica que duas condições devem ser verdadeiras para que a ação de comprar sorvete ocorra: o clima precisa estar quente e ensolarado (calor), e a pessoa precisa ter dinheiro disponível no bolso.
+* "Vou assistir ao filme se estiver em cartaz no cinema e meus amigos quiserem ir também."
+  * Esta afirmação indica que duas condições precisam ser atendidas para que a pessoa assista ao filme: o filme deve estar sendo exibido no cinema (estar em cartaz) e os amigos também devem querer ir.
+* "Eu vou à festa se for sexta-feira e eu não tiver nenhum compromisso importante no dia seguinte."
+  * Esta afirmação sugere que a pessoa comparecerá à festa apenas se duas condições forem verdadeiras: é sexta-feira (e não outro dia da semana) e não há nenhum compromisso importante agendado para o dia seguinte.
+
+Esses exemplos ilustram como o operador lógico E é usado para combinar duas condições distintas em uma única afirmação, onde ambas as condições precisam ser verdadeiras para que a ação especificada ocorra.
+
 A tabela verdade do operador lógico E é apresentada a seguir: 
 
 | A | B | A && B |
@@ -330,6 +340,16 @@ O operador lógico E é útil quando queremos que todas as condições sejam ate
 
 #### Operador Lógico OU 
 O operador lógico OU, representado por "||", retorna verdadeiro se pelo menos uma das proposições envolvidas for verdadeira. Isso significa que ele retorna falso apenas se ambas as proposições forem falsas.
+
+Exemplos de afirmações usando o operador lógico E, expressas de linguagem natural:
+* "Vou comprar o laptop se ele estiver em promoção ou vier com brindes grátis."
+  * Nesta afirmação, a pessoa considerará comprar o laptop se uma das duas condições for verdadeira: o laptop está em promoção (com desconto) ou vem com brindes grátis.
+* "Vou fazer a viagem se o clima estiver ensolarado ou se o destino for uma praia paradisíaca."
+  * Nesta afirmação, a pessoa optará por fazer a viagem se pelo menos uma das condições for atendida: o clima estiver ensolarado ou o destino da viagem for uma praia paradisíaca.
+* "Eu comprarei o apartamento se ele tiver uma boa localização ou se tiver uma vista panorâmica."
+  * Neste caso, a pessoa considerará comprar o apartamento se uma das duas condições for verdadeira: o apartamento estiver bem localizado (em uma área conveniente) ou oferecer uma vista panorâmica desejável.
+
+Esses exemplos ilustram como o operador lógico OU é usado para combinar duas condições distintas em uma única afirmação, onde apenas uma das condições precisa ser verdadeira para que a ação especificada ocorra.
 
 A tabela verdade do operador lógico OU é apresentada a seguir: 
 
