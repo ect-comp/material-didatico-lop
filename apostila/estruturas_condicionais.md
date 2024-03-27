@@ -419,7 +419,7 @@ Exemplos:
 1. C > A || B < C && A + 5 > B  
 1. A == C-1 && B * 2 > A*C && (A+B+C)/2 < B 
 1. C - A > B / 3 || !(5 + C – A <= 12)             
-1. C*3 >= B && 5+A <= B && B-C >= A*2 && B*3 > (B+C)*2
+1. C\*3 >= B && 5+A <= B && B-C >= A\*2 && B\*3 > (B+C)\*2
 
 
 2 - Implemente um programa que verifica se um dado número inteiro é divisível por 3, 4 e 5 ao mesmo tempo.
