@@ -424,17 +424,26 @@ Exemplos:
 
 2 - Implemente um programa que verifica se um dado número inteiro é divisível por 3, 4 e 5 ao mesmo tempo.
 ```javascript
-//… divisível por 3 e divisível por 4 e divisível por 5...
+n = parseInt(prompt("Entre com um número: "))
+if ( n % 3 == 0 && n % 4 == 0 && n % 5 == 0) {
+    alert("Divisível por 3 e divisível por 4 e divisível por 5.")
+}
 ```
 
 3 - Implemente um programa que verifica se um dado número está no intervalo fechado de 0 a 10 ou no intervalo aberto de 30 a 40.
 ```javascript
-//… dado número é maior ou igual a 0 e menor ou igual a 10 ou maior que 30 e menor que 40.
+n = parseFloat(prompt("Entre com um número: "))
+if ( n >= 0 && n =< 10 || n > 30 && n < 40 ) {
+    alert("Número é maior ou igual a 0 e menor ou igual a 10 ou maior que 30 e menor que 40.")
+}
 ```
 
 4 - Implemente um programa que verifica se um dado número não está no intervalo fechado de -5 a 30
 ```javascript
-… dado número não é maior ou igual a -5 e menor ou igual a 30
+n = parseFloat(prompt("Entre com um número: "))
+if ( ! (n >= -5 && n <= 30 ) ) {
+    alert("Número não é maior ou igual a -5 e menor ou igual a 30.")
+}
 ```
 
 
