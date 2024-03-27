@@ -394,6 +394,49 @@ if (!(x == 0)) {
 
 No exemplo acima, a negação da condição "x é igual a zero" garante que o bloco de código seja executado apenas se x for diferente de zero. Isso demonstra como o operador de negação pode ser útil para controlar o fluxo do programa com base em condições específicas.
 
+### Precedência entre operações
+
+1. NÃO (!)
+1. Operadores aritméticos
+1. Operadores relacionais
+1. E (&&)
+1. OU (||)
+
+Exemplos:
+```javascript
+2 < 5 && 15/3 == 5
+```
+
+```javascript
+5*4 >= 20 && 17/4 < 3 || 2+3 == 5
+```
+
+### Exercícios 
+
+1 - Determine os resultados obtidos na avaliação das expressões lógicas seguintes, sabendo que A = 2, B = 7 e C = 3:
+
+1. A > B-1 || A > B - 2   
+1. C > A || B < C && A + 5 > B  
+1. A == C-1 && B * 2 > A*C && (A+B+C)/2 < B 
+1. C - A > B / 3 || !(5 + C – A <= 12)             
+1. C*3 >= B && 5+A <= B && B-C >= A*2 && B*3 > (B+C)*2
+
+
+2 - Implemente um programa que verifica se um dado número inteiro é divisível por 3, 4 e 5 ao mesmo tempo.
+```javascript
+//… divisível por 3 e divisível por 4 e divisível por 5...
+```
+
+3 - Implemente um programa que verifica se um dado número está no intervalo fechado de 0 a 10 ou no intervalo aberto de 30 a 40.
+```javascript
+//… dado número é maior ou igual a 0 e menor ou igual a 10 ou maior que 30 e menor que 40.
+```
+
+4 - Implemente um programa que verifica se um dado número não está no intervalo fechado de -5 a 30
+```javascript
+… dado número não é maior ou igual a -5 e menor ou igual a 30
+```
+
 
 
 ## Referências
