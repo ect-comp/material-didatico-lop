@@ -1,20 +1,28 @@
 # Repetição Condicional
 
-
-As estruturas de repetição são usadas quando precisamos executar diversas vezes uma mesma sequência de instruções.
-Em JavaScript:
-* **while** (enquanto)
-* **do-while** (faça enquanto)
-* **for** (para)
-As diferentes estruturas de repetição são semanticamente equivalentes. 
+As estruturas de repetição desempenham um papel crucial na programação quando há a necessidade de executar repetidamente uma mesma sequência de instruções. Em linguagens de programação como JavaScript, temos várias estruturas de repetição à disposição, cada uma com suas próprias características e usos específicos: o **while**, o **do-while** e o **for**. As diferentes estruturas de repetição são semanticamente equivalentes. 
+ 
+O **while** é uma estrutura de repetição que repete um bloco de código enquanto uma condição especificada for verdadeira. Isso significa que o bloco de código dentro do **while** é executado repetidamente enquanto a condição definida for avaliada como verdadeira.
 
 Sintaxe:
 ```javascript
+//Enquanto a condição for verdadeira, execute as instruções.
 while ( condição ) {
    // instruções 
 }
 ```
-"Enquanto a condição for verdadeira, execute as instruções."
+
+Exemplo de uso do while em JavaScript:
+```javascript
+let contador = 0;
+while (contador < 5) {
+    console.log("O contador é: " + contador);
+    contador++;
+}
+```
+
+
+
 
 Sintaxe:
 ```javascript
