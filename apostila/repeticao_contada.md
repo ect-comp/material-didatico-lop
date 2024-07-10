@@ -240,7 +240,69 @@ Fatorial
 Fatorial = 1 * 2 * 3 * ... * N 
 
 
+## Encontrando o Maior Elemento de uma Sequência com Repetição
 
+Em programação, encontrar o maior (ou menor) elemento de uma sequência de números é uma tarefa comum que pode ser resolvida de forma simples utilizando estruturas de repetição. Vamos aprender como fazer isso usando um algoritmo intuitivo.
+
+### Entendendo o Algoritmo
+
+O algoritmo para encontrar o maior elemento de um grupo é bastante intuitivo. Vamos ilustrar isso com um exemplo prático.
+
+**Exemplo:**
+```
+Vou mostrar vários números. Vocês devem me dizer qual é o maior.
+Números: 9, -6, 10, 5, 0, -4, -13, 13, -7, 11
+
+Qual o maior número?
+Resposta: 13
+```
+
+Para encontrar o maior número, seguimos os seguintes passos:
+
+1. **Início com o Trono Vazio**: Imaginamos que temos um trono onde o maior número sentará. No início, o trono está vazio.
+2. **Primeiro Elemento**: O primeiro número vê o trono vazio e senta-se nele.
+3. **Comparação dos Elementos Restantes**: Para cada número seguinte:
+   - Comparamos o número atual com o número sentado no trono.
+   - Se o número atual for maior, ele toma o lugar no trono.
+4. **Resultado Final**: No final, o número que está no trono é o maior de todos.
+
+### Algoritmo em Pseudocódigo
+
+Vamos agora escrever esse processo em forma de algoritmo:
+
+1. O primeiro elemento encontra o trono vazio e senta-se nele.
+2. Para cada elemento restante do grupo:
+   - Comparamos com o elemento sentado no trono.
+   - Se for maior, este elemento vai para o trono.
+3. Ao final, o elemento no trono é o maior.
+
+### Implementação em JavaScript
+
+Vamos implementar este algoritmo em JavaScript para encontrar o maior número de uma sequência.
+
+```javascript
+let numeros = [9, -6, 10, 5, 0, -4, -13, 13, -7, 11];
+
+// Inicialmente, consideramos o primeiro elemento como o maior
+let maior = numeros[0];
+
+// Usamos uma estrutura de repetição para comparar os demais elementos
+for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > maior) {
+        maior = numeros[i]; // O novo maior número assume o "trono"
+    }
+}
+
+console.log("O maior número é:", maior);
+```
+
+**Explicação do Código:**
+- **Inicialização**: A variável `maior` é inicializada com o primeiro número da lista.
+- **Estrutura de Repetição**: Usamos um laço `for` para percorrer todos os elementos restantes da lista.
+- **Comparação e Atualização**: A cada iteração, comparamos o elemento atual com o valor em `maior`. Se o elemento atual for maior, atualizamos `maior` com esse novo valor.
+- **Resultado**: Ao final do laço, a variável `maior` contém o maior número da lista.
+
+O processo de encontrar o maior (ou menor) elemento de uma sequência utilizando repetição é direto e intuitivo. Ao seguir um algoritmo simples e implementá-lo em uma linguagem de programação como JavaScript, podemos resolver esse tipo de problema de forma eficiente e clara.
 
 
 
