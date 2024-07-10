@@ -281,15 +281,16 @@ Vamos agora escrever esse processo em forma de algoritmo:
 Vamos implementar este algoritmo em JavaScript para encontrar o maior número de uma sequência.
 
 ```javascript
-let numeros = [9, -6, 10, 5, 0, -4, -13, 13, -7, 11];
+// Exemplo de números 9, -6, 10, 5, 0, -4, -13, 13, -7 e 11 
 
 // Inicialmente, consideramos o primeiro elemento como o maior
-let maior = numeros[0];
+let maior = parseFloat(prompt("Entre com um número:"));
 
 // Usamos uma estrutura de repetição para comparar os demais elementos
 for (let i = 1; i < numeros.length; i++) {
-    if (numeros[i] > maior) {
-        maior = numeros[i]; // O novo maior número assume o "trono"
+    numero = parseFloat(prompt("Entre com um número:"));
+    if (numero > maior) {
+        maior = numero; // O novo maior número assume o "trono"
     }
 }
 
